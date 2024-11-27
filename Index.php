@@ -16,6 +16,8 @@ define('pi', 3);
 $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
 
+$db->update('bdname',"`text`='$text',`step`='$step'","example='$example'");
+
 print_r($query[0]['task_text']);
 
 echo $query[0];
