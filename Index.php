@@ -5,7 +5,7 @@ include_once 'db.class.php';
     // хост БД
 define('db_host','localhost 3306');
     // Имя БД
-define('db_name','BDate');
+define('db_name','dbate');
     // Пользователь БД
 define('db_user','root');
 // Пароль БД
