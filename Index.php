@@ -17,7 +17,7 @@ $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
 
 
-echo "echo";
+echo "echo". $query[1];
 
 
 ?>
