@@ -16,7 +16,9 @@ define('pi', 3);
 $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
 
-
+$text = 'Пример текста';
+$step = 10;
+$example = 'Пример значения';
 
 print_r($query[0]['task_text']);
 
