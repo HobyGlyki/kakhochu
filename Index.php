@@ -11,7 +11,7 @@ define('db_user','root');
 // Пароль БД
 define('db_pass','admin_password');
 
-define('pi', 3)
+define('pi', 3);
 
 
 $suka = 3* 3;
