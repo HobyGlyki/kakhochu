@@ -19,4 +19,8 @@ $suka = 3* pi;
 $db = new DB_class(db_host,db_name,db_user,db_pass);
 
 echo "Ваше имя: " .$suka;
+
+$query = $db->select(true,"*","bdname","example='".$example."'");
+print_r($query[0]['task_id']);
+
 ?>
