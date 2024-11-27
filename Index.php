@@ -20,7 +20,7 @@ $db = new DB_class(db_host,db_name,db_user,db_pass);
 
 
 
-$query = $db->select(true,"*","bdname","example='".$example."'");
+
 
 echo "Ваше имя: " .$suka;
 
