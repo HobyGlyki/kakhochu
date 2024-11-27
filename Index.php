@@ -16,9 +16,9 @@ define('pi', 3);
 $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
 
-print_r($query[1]['task_id']);
+print_r($query[0]['task_text']);
 
-echo "echo". $query[0];
+echo $query[0];
 
 
 ?>
