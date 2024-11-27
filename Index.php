@@ -22,6 +22,6 @@ $db = new DB_class(db_host,db_name,db_user,db_pass);
 
 $query = $db->select(true,"*","bdname","example='".$example."'");
 print_r($query[0]['new one']);
-echo "Ваше имя: " .$query[0]['New One'];
+echo "Ваше имя: " .3;
 
 ?>
