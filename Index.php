@@ -3,7 +3,7 @@
     // Подключение файла соединения с БД
 include_once 'db.class.php';
     // хост БД
-define('db_host','localhost 3306');
+define('db_host','localhost');
     // Имя БД
 define('db_name','dbate');
     // Пользователь БД
