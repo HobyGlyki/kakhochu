@@ -14,7 +14,7 @@ define('db_pass','admin_password');
 define('pi', 3)
 
 
-$suka = 3* pi
+$suka = 3* 3;
 
 echo "Ваше имя: " .$suka;
 ?>
