@@ -22,7 +22,7 @@ $example = 'Пример значения';
 
 
 
-print_r($query[0]['task_text']);
+
 
 echo $query[0];
 
