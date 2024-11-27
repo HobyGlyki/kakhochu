@@ -11,5 +11,10 @@ define('db_user','root');
 // Пароль БД
 define('db_pass','admin_password');
 
-echo "Ваше имя: " db_pass;
+define('pi', 3)
+
+
+$suka = 3* pi
+
+echo "Ваше имя: " .$suka;
 ?>
