@@ -17,6 +17,8 @@ $query = $db->select(true,"*","tasks","");
 print_r($query[0]['task_text']);
 
 
+?>
+
 
 <!DOCTYPE html>
 <html>
@@ -28,5 +30,3 @@ print_r($query[0]['task_text']);
 
 </body>
 </html>
-
-?>
