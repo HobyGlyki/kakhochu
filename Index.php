@@ -16,10 +16,7 @@ define('pi', 3);
 $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
 
-$text = "нет, я тебя выебу"
-$step = 1
-$step = "task_text"
-    
+
 
 print_r($query[0]['task_text']);
 
