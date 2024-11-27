@@ -22,6 +22,6 @@ $db = new DB_class(db_host,db_name,db_user,db_pass);
 print_r($query[0]['task_id']);
 
 
-echo "площадь " .$suka;
+echo "площадь " .$db;
 
 ?>
