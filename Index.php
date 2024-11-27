@@ -21,7 +21,7 @@ $db = new DB_class(db_host,db_name,db_user,db_pass);
 
 
 $query = $db->select(true,"*","bdname","example='".$example."'");
-print_r($query[0]['task_id']);
+
 echo "Ваше имя: " .$suka;
 
 ?>
