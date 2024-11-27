@@ -18,7 +18,8 @@ $query = $db->select(true,"*","tasks","");
 
 $text = "нет, я тебя выебу"
 $step = 1
-
+$step = "task_text"
+    
 $db->update('bdname',"`text`='$text',`step`='$step'","example='$example'");
 
 print_r($query[0]['task_text']);
