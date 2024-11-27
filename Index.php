@@ -20,7 +20,7 @@ $text = 'task_text';
 $step = 1;
 $example = 'Пример значения';
 
-$db->update('bdname',"`text`='$text',`step`='$step'","example='$example'");
+
 
 print_r($query[0]['task_text']);
 
