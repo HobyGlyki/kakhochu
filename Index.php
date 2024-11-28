@@ -2,7 +2,7 @@
 
  // Подключение файла соединения с БД
 include_once 'db.class.php';
-$_SESSION[$_POST['ttest']];
+
  // хост БД
 define('db_host','localhost:3306');
  // Имя БД
@@ -17,7 +17,7 @@ $query = $db->select(true,"*","tasks","");
 
 
 
-print_r($_POST['test']);
+print_r($_SESSION['test']);
 
 
 ?>
