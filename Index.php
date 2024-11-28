@@ -36,7 +36,7 @@ $query = $db->select(true,"*","tasks","");
         ?>
         <div class="task">
             <div class="task-control", a>
-                <input type="checkbox" name="check" checked=<?php echo false ?>>
+                <input type="checkbox" name="check" checked=<?php echo "" ?>>
 <?php
 if (($query[$i]['task_complete']==0))
 {
