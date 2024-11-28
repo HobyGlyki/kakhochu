@@ -90,14 +90,21 @@ $query = $db->select(true,"*","tasks","");
 
  <form action="" method="post">
    <div class="main-text">
+    <div class="tasks" method="post">
+    <?php
+    for($i=0;$i<count($query);$i++) {
+        ?>
+        <div class="task">
        <div class="task-text"><?php echo $query[$i]['task_text']; ?></div>
             <div class="task-date">
                 <input type="date" name="time" value="<?php echo $query[$i]['task_date']; ?>">
             </div>		
-<div>
+</div>
+<div class="results">
     <input class= "buttons" type="submit" name="save">
  </div>
- </div>
+</div>
+</div>
  </form>
 </body>
 </html>
