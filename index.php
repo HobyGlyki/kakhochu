@@ -132,7 +132,7 @@ echo $chedn. $query[$i]['task_complete'];
 
 
 <?php
-echo $chedn. $query[1]['task_complete']
+echo $chedn. $query[1]['task_complete'];
 for($i=0;$i<count($query);$i++) {
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
