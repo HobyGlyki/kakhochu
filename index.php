@@ -137,22 +137,21 @@ echo $queryup. "2020";
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 
-for($j=0;$j<count($query);$j++) {
-if($_POST["check$j"] == null){
+for($j=0;$j<count($query);$j++) {}
+if($_POST["check1"] == null){
 	$step = 0; 
         $chedn ="не сделанно";}
 else{
 	$step = 1;
         $chedn ="привет";}# На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
-$example =$j+1; #Значение условия
+$example =1; #Значение условия
 $where1= "`task_id`='$example'"; #условие
 
 $where = "WHERE ".$where1;
 
 $update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 $queryup = $db->update($name, $set1, $where1);
-}
 $query = $queryup;
 
 
