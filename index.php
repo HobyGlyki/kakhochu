@@ -146,7 +146,6 @@ $where1= "`task_id`='$example'"; #условие
 
 $where = "WHERE ".$where1;
 echo ( $update_sql1);
-echo($queryj);
 $update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 $query = $db->update($name, $set1, $where1);
 
