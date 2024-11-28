@@ -151,7 +151,7 @@ $where1= "`task_id`='$example'"; #условие
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 #echo ( $update_sql1);
 $upd = $db->update($name, $set1, $where1);}
-header("Refresh:0");
+
 ?>
    </div>
 
