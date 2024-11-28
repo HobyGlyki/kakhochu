@@ -67,7 +67,7 @@ $step = 0;
 $example = 1;
 $from="tasks";
 $set="'$text'='$step'";
-$where= "task_id='$example'";
+$where= "'task_id'='$example'";
 $where = "WHERE ".$where;
 
 echo "UPDATE ".$from." SET ".$set." ".$where."";
