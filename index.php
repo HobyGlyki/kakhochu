@@ -1,4 +1,4 @@
-<?php
+	<?php
 
  // Подключение файла соединения с БД
 include_once 'db.class.php';
@@ -28,7 +28,7 @@ else{
          $chedn[] ="не сделанно ";
        }}
 echo $chedn[0];
-
+$query = $db->update($name, $set1, $where1);
 ?>
 
 <!DOCTYPE html>
