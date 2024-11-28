@@ -17,6 +17,8 @@ $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
 
 for($hi=0;$hi<count($query);$hi++) {
+if(not($query[$hi]['task_complete'])){
+}
 
 }
  
