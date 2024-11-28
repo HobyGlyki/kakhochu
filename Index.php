@@ -51,7 +51,7 @@ $query = $db->select(true,"*","tasks","");
 </html>
 
 <?php
-if(isset($_POST['check']) && 
+if(isset($_POST['check'[0]]) && 
    $_POST['check'] == '1') 
 {
     echo "Need wheelchair access.";}
