@@ -150,7 +150,7 @@ $update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 $queryup = $db->update($name, $set1, $where1);
 }
 $query = $db->select(true,"*","tasks","");
-
+echo $queryup;
 if ($queryup <> null){header("Refresh:0");}
 ?>
    </div>
