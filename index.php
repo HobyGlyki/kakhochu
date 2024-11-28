@@ -35,8 +35,5 @@ $where1= "`task_id`='$example'"; #условие
 $query = $db->update($name, $set1, $where1);
 ?>
 
-</body>
-</html>
-
 
 
