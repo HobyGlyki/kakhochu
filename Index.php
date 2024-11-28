@@ -36,7 +36,7 @@ $query = $db->select(true,"*","tasks","");
         ?>
         <div class="task">
             <div class="task-control", a>
-                <input type="checkbox" name="check">	    	
+                <input type="checkbox" name="check" checked=<?php echo $query[$i]['task_complete'] ?>>	    	
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
             <div class="task-date">
@@ -50,11 +50,10 @@ $query = $db->select(true,"*","tasks","");
 </div>
 
 
-    <!-- ещё кие-то поля -->
-    <input type="checkbox" name="my_bloggood-ru" value="1" />
     <input type="submit" name="ок" value="Отправить форму" />
 </form>
-<?php
+<div>
+<?php>
 if ( $_POST['check'] == '')
 {
 echo 'не отмечено';
@@ -63,6 +62,7 @@ echo 'не отмечено';
         echo 'отмечено';
        }
 ?>
+</div>
 </body>
 </html>
 
