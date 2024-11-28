@@ -118,14 +118,8 @@ if (($query[$i]['task_complete']==0))
 	
 </div>
 <div class="results">
-	<div> 
-	</div>
-	<div> 
-	</div>
-	<div> 
-	</div>
-	<div> 
-	</div>
+	<br>
+	<br>
     <input class= "buttons" type="submit" name="save">
  </div>
 </div>
