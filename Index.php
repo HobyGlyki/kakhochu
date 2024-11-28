@@ -52,7 +52,7 @@ $query = $db->select(true,"*","tasks","");
 
     <input type="submit" name="ок" value="Отправить форму" />
 </form>
-<div>
+<div></div>
 <?php>
 if ( $_POST['check'] == '')
 {
@@ -62,7 +62,7 @@ echo 'не отмечено';
         echo 'отмечено';
        }
 ?>
-</div>
+
 </body>
 </html>
 
