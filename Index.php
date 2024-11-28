@@ -67,13 +67,7 @@ $step = 0;
 $example = 'task_id == 1';
 $query =$db->update("tasks","`text`='$text',`step`='$step'", "example='$example'");
 
-if ( $_POST['check'] == '')
-{
 echo 'не отмечено';
-}
-  else {
-        echo 'отмечено';
-       }
 ?>
 
 </body>
