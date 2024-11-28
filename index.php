@@ -142,7 +142,7 @@ $where1= "`task_id`='$example'"; #условие
 
 #$where = "WHERE ".$where1;
 $update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
-echo ( $_POST['check']);
+echo ( $_POST["check'$i'"]);
  }
 #$query = $db->update($name, $set1, $where1);
 ?>
