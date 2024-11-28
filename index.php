@@ -23,7 +23,7 @@ print_r($_SESSION['test']);
 
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
-$step = $_POST['my_bloggood-ru']; # На что поменять
+$step = $_POST['test']; # На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
 $example = 1; #Значение условия
 $where1= "`task_id`='$example'"; #условие
