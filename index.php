@@ -132,8 +132,8 @@ echo $chedn. $query[$i]['task_complete'];
 <?php
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
-$queryj = $query
-for($j=0;$j<count($queryj);$j++) {
+
+for($j=0;$j<count($query);$j++) {
 if($_POST["check$j"] == null){
 	$step = 0; 
         $chedn ="не сделанно";}
