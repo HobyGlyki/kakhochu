@@ -62,18 +62,16 @@ echo 'не отмечено';
 </form>
 
 <?php
-$text = "task_complete";
-$step = 1;
-$example = 1;
-$name="`tasks`";
-$set1="`$text` = '$step'";
-$where1= "`task_id`='$example'";
-$where = "WHERE ".$where1;
+$name="`tasks`"; # Название таблицы
+$text = "task_complete"; # Что поменять
+$step = 0; # На что поменять
+$set1="`$text` = '$step'"; #соединить Text и Step
+$example = 1; #Значение условия
+$where1= "`task_id`='$example'"; #условие
 
-$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
-
-echo ($update_sql1);
-
+#$where = "WHERE ".$where1;
+#$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
+#echo ($update_sql1);
 
 $query = $db->update($name, $set1, $where1);
 ?>
