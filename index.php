@@ -15,15 +15,7 @@ define('db_pass','admin_password');
 
 $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
-for($h=0;$h<count($query);$h++) {
-if (not ($query[$h]['task_complete'])){
-	$chedn ="не сделанно ";
-	$ched = " ";
-}
-else{
-	 $ched = "checked";
-         $chedn ="сделанно ";
-       }} 
+ 
 ?>
 
 <!DOCTYPE html>
