@@ -103,7 +103,7 @@ elseif(($query[$i]['task_complete']==1)){
 	 $ched = "checked";
          $chedn ="сделанно ";
        } 
-echo $chedn;
+echo $chedn. $query[$i]['task_complete'];
 ?>	
                 <input type="checkbox" name=<?php echo "check".$i?> <?php echo $ched;?> value="1">
             </div>
@@ -120,7 +120,7 @@ echo $chedn;
 <div class="results">
 	<br>
 	<br>
-    <input class= "buttons" type="submit" name="submit">
+    <input class= "buttons" type="submit" name="save">
  </div>
 </div>
 </div>
