@@ -65,11 +65,14 @@ echo 'не отмечено';
 $text = "task_complete";
 $step = 0;
 $example = 1;
+$from="tasks";
+$set="'$text'='$step'";
+$where= "task_id='$example'";
+$where = "WHERE ".$where;
 
+echo "UPDATE ".$from." SET ".$set." ".$where."";
 
-echo "UPDATE "."tasks"." SET "."'$text'='$step'"." "task_id='$example'"";
-
-$db->update("tasks", "'$text'='$step'", "task_id='$example'");
+#$db->update("tasks", "'$text'='$step'", "task_id='$example'");
 ?>
 
 </body>
