@@ -69,9 +69,9 @@ $name="`tasks`";
 $set1="`$text` = '$step'";
 $where1= "'task_id'='$example'";
 $where = "WHERE ".$where1;
-echo ($name, $set1, $where1);
+echo ($name. $set1. $where1);
 
-$query = $db->update($name. $set1. $where1);
+$query = $db->update($name, $set1, $where1);
 ?>
 
 </body>
