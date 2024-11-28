@@ -67,8 +67,8 @@ $step = 0;
 $example = 1;
 
 
-echo 'не отмечено';
-print_r("где?");
+echo "UPDATE ".$from." SET ".$set." ".$where."";
+
 $db->update("tasks", "'$text'='$step'", "task_id='$example'");
 ?>
 
