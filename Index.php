@@ -68,7 +68,7 @@ $example = 1;
 
 
 echo 'не отмечено';
-print_r("где?")
+print_r("где?");
 $db->update("tasks", "'$text'='$step'", "task_id='$example'");
 ?>
 
