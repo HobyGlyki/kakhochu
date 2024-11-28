@@ -30,7 +30,7 @@ $query = $db->select(true,"*","tasks","");
 </head>
 <body>
 <div class="tasks" method="post">
-<form method="post" action="">
+#<form method="post" action="">
     <?php
     for($i=0;$i<count($query);$i++) {
         ?>
@@ -59,7 +59,7 @@ if (($query[$i]['task_complete']==0))
 
 
     <input type="submit" name="ок" value="Отправить форму" />
-</form>
+#</form>
 
 <?php
 $name="`tasks`"; # Название таблицы
