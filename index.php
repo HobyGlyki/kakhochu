@@ -107,7 +107,7 @@ else{
 	        <div class="task">
             		<div class="task-control", a>
 				<?php
-echo $chedn[$i].;
+echo $chedn[$i];
 ?>	
                 <input type="checkbox" name=<?php echo "check".$i?> <?php echo $ched[$i];?> value="1">
             </div>
