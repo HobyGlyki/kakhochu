@@ -139,7 +139,7 @@ $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 if($_POST["check$1"] == null){
 	$step = 0; 
-        $chede ="не сделанно";
+        $chede ="не сделанно";}
 else{
 	$step = $_POST["check$1"];
         $chede ="привет";}# На что поменять
