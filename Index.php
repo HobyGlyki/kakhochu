@@ -62,7 +62,7 @@ echo 'не отмечено';
 </form>
 
 <?php
-$db->update("tasks","task_id","'$_POST['check']'");
+$query =$db->update("tasks","task_id","'$_POST['check']'");
 if ( $_POST['check'] == '')
 {
 echo 'не отмечено'.$query[0] ;
