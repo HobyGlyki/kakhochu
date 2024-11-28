@@ -134,7 +134,14 @@ echo $chedn;
 for($i=0;$i<count($query);$i++) {
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
-# На что поменять
+if($_POST["check$i"] == null){
+	$step = 0; 
+	$ched = " ";
+        $chedn ="не сделанно";}
+else{
+	$step = $_POST["check$i"];
+    	$ched = "checked";
+        $chedn ="сделанно";}# На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
 $example = $i+1; #Значение условия
 $where1= "`task_id`='$example'"; #условие
