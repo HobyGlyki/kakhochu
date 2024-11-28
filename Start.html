@@ -88,12 +88,15 @@
  <button class="button" onclick="location.href='register.html'">Reg</button>
  </div>
  <div class="text_header">
- <h1>Заголовок сайта</h1>
+ <h1>Задачник</h1>
  </div>
 </div>
 
  <div class="main-text">
- <p>Тут наш текст, но мне лень придумывать, так что</p>
+       <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
+            <div class="task-date">
+                <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
+            </div>		
 
  <div class="dark-block">
  <p>Мы рады видеть вас на нашем сайте. Если у вас есть какие-либо вопросы или нужна помощь, не стесняйтесь обращаться к нам!</p>
