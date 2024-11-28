@@ -103,7 +103,7 @@ elseif(($query[$i]['task_complete']==1)){
 	 $ched = "checked";
          $chedn ="сделанно ";
        } 
-$chedу=$chedn;
+$chede=$chedn;
 echo $chedn. $query[$i]['task_complete'];
 ?>	
                 <input type="checkbox" name=<?php echo "check".$i?> <?php echo $ched;?> value="1">
