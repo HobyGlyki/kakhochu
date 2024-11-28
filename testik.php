@@ -26,6 +26,6 @@ $example =1; #Значение условия
 $where1= "`task_id`='$example'"; #условие
 
 $where = "WHERE ".$where1;
-
+$queryup = $db->update($name, $set1, $where1);
 
 ?>
