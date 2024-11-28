@@ -150,7 +150,7 @@ $where1= "`task_id`='$example'"; #условие
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 #echo ( $update_sql1);
 $query = $db->update($name, $set1, $where1);
-if($chede <> $chedn){header("Refresh:0");}
+if($chede <> $chedn) {header("Refresh:0");}}
 
 
 ?>
