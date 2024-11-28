@@ -88,19 +88,34 @@ $query = $db->select(true,"*","tasks","");
  </div>
 </div>
 
- <form action="" method="post">
+
    <div class="main-text">
-    <div class="tasks" method="post">
+  <div class="tasks" method="post">
+<form method="post" action="">
     <?php
     for($i=0;$i<count($query);$i++) {
         ?>
         <div class="task">
-      <div class="task-control", a>
-       <div class="task-text"><?php echo $query[$i]['task_text']; ?></div>
+            <div class="task-control", a>
+                <input type="checkbox" name="check" checked=<?php echo "" ?>>
+<?php
+if (($query[$i]['task_complete']==0))
+{
+	echo 'не отмечено';
+}
+ else {
+        echo 'отмечено';
+       }?>	
+            </div>
+            <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
             <div class="task-date">
-                <input type="date" name="time" value="<?php echo $query[$i]['task_date']; ?>">
+                <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
             </div>		
-</div>
+        </div>	
+        <?php
+    }
+    ?>
+	
 </div>
 <div class="results">
     <input class= "buttons" type="submit" name="save">
@@ -108,6 +123,9 @@ $query = $db->select(true,"*","tasks","");
 </div>
 </div>
  </form>
+  </div>
+   </div>
+
 </body>
 </html>
 
