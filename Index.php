@@ -52,5 +52,5 @@ $query = $db->select(true,"*","tasks","");
 
 <?php
 isset($_POST['check'])
-
+print_r($_POST["check"])
 ?>
