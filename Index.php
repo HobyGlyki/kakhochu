@@ -69,7 +69,11 @@ $name="`tasks`";
 $set1="`$text` = '$step'";
 $where1= "'task_id'='$example'";
 $where = "WHERE ".$where1;
-echo ($name. $set1. $where1);
+
+$update_sql1 = "UPDATE ".$namr." SET ".$set1." ".$where."";
+
+echo ($update_sql1);
+
 
 $query = $db->update($name, $set1, $where1);
 ?>
