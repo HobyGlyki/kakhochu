@@ -64,12 +64,12 @@ echo 'не отмечено';
 <?php
 $text = "task_complete";
 $step = 0;
-$example = 'task_id == 1';
+$example = 1;
 
 
 echo 'не отмечено';
 print_r("где?")
-$query =$db->update("tasks","`text`='$text',`step`='$step'", "example='$example'");
+$query =$db->update("tasks", "'$text'='$step'", "task_id='$example'");
 ?>
 
 </body>
