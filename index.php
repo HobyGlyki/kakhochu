@@ -147,11 +147,11 @@ $set1="`$text` = '$step'"; #соединить Text и Step
 $example = $i+1; #Значение условия
 $where1= "`task_id`='$example'"; #условие
 
-$where = "WHERE ".$where1;
-$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
-echo ( $update_sql1);
+#$where = "WHERE ".$where1;
+#$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
+#echo ( $update_sql1);
 $upd = $db->update($name, $set1, $where1);}
-
+header("Refresh:0");
 ?>
    </div>
 
