@@ -118,7 +118,7 @@ echo $chedn. $query[$i]['task_complete'];
 <div class="results">
 	<br>
 	<br>
-    <input class= "buttons" type="submit" name="save">
+    <input class= "buttons" type="submit"S>
  </div>
 </div>
 </div>
@@ -130,7 +130,6 @@ echo $chedn. $query[$i]['task_complete'];
 
 
 <?php
-echo $_POST["save"];
 for($j=0;$j<count($query);$j++) {
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
