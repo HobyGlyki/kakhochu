@@ -52,8 +52,8 @@ $query = $db->select(true,"*","tasks","");
 
     <input type="submit" name="ок" value="Отправить форму" />
 </form>
-<div></div>
-<?php>
+
+<?php
 if ( $_POST['check'] == '')
 {
 echo 'не отмечено';
