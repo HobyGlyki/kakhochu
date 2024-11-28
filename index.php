@@ -124,7 +124,7 @@ echo $chedn. $query[$i]['task_complete'];
 </div>
  </form>
   </div>
-
+</div>
 </body>
 </html>
 
@@ -136,10 +136,10 @@ $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 if($_POST["check$i"] == null){
 	$step = 0; 
-        $chede ="не сделанно";}
+        $chedn ="не сделанно";}
 else{
 	$step = 1;
-        $chede ="привет";}# На что поменять
+        $chedn ="привет";}# На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
 $example =$i+1; #Значение условия
 $where1= "`task_id`='$example'"; #условие
