@@ -105,7 +105,7 @@ if (($query[$i]['task_complete']==0))
 }
  else {
 	 $chk = "check'$i'";
-         echo "check".$i;
+         echo $chk;
        }?>	
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
