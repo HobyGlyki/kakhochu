@@ -138,7 +138,7 @@ $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 
 for($j=0;$j<count($query);$j++) {}
-if($_POST["check1"] == null){
+if($_POST["check0"] == null){
 	$step = 0; 
         $chedn ="не сделанно";}
 else{
