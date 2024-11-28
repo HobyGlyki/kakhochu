@@ -18,7 +18,7 @@ $query = $db->select(true,"*","tasks","");
 $chedn= array();
 $ched= array();
 for($i=0;$i<count($query);$i++) {
-if(1==1){
+if($query[i][task_complite]){
 	$chedn[] = "не сделанно ";
 	$ched[] = " ";
 }
@@ -103,7 +103,7 @@ if(1==1){
 	        <div class="task">
             		<div class="task-control", a>
 				<?php
-echo $chedn. $query[$i]['task_complete'];
+echo $chedn[$i]. $query[$i]['task_complete'];
 ?>	
                 <input type="checkbox" name=<?php echo "check".$i?> <?php echo "$ched";?> value="1">
             </div>
