@@ -128,8 +128,7 @@ if (($query[$i]['task_complete']==0))
   </div>
    </div>
 
-</body>
-</html>
+
 
 <?php
 
@@ -147,5 +146,6 @@ echo ( $_POST["check'$i'"]);
 #$query = $db->update($name, $set1, $where1);
 ?>
 
-
+</body>
+</html>
 
