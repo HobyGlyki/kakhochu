@@ -2,6 +2,7 @@
 
  // Подключение файла соединения с БД
 include_once 'db.class.php';
+include_once 'Start.html';
 
  // хост БД
 define('db_host','localhost:3306');
@@ -20,49 +21,6 @@ $query = $db->select(true,"*","tasks","");
 print_r($_SESSION['test']);
 
 
-?>
-
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>HTML чтоб было круто</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<div class="tasks" method="post">
-#<form method="post" action="">
-    <?php
-    for($i=0;$i<count($query);$i++) {
-        ?>
-        <div class="task">
-            <div class="task-control", a>
-                <input type="checkbox" name="check" checked=<?php echo "" ?>>
-<?php
-if (($query[$i]['task_complete']==0))
-{
-	echo 'не отмечено';
-}
- else {
-        echo 'отмечено';
-       }?>	
-            </div>
-            <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
-            <div class="task-date">
-                <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
-            </div>		
-        </div>	
-        <?php
-    }
-    ?>
-	
-</div>
-
-
-    <input type="submit" name="ок" value="Отправить форму" />
-#</form>
-
-<?php
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 $step = $_POST['my_bloggood-ru']; # На что поменять
