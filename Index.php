@@ -62,6 +62,10 @@ echo 'не отмечено';
 </form>
 
 <?php
+$text = "task_complete";
+$step = 0;
+$example = 'task_id == 1';
+
 
 echo 'не отмечено';
 print_r("где?")
