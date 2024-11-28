@@ -16,7 +16,7 @@ $query = $db->select(true,"*","tasks","");
 
 
 
-#print_r($query[0]['task_text']);
+print_r($_POST['test']);
 
 
 ?>
