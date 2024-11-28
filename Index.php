@@ -62,8 +62,7 @@ echo 'не отмечено';
 </form>
 
 <?php
-$text = "task_id"
-$step = $_POST['check']
+
 
 if ( $_POST['check'] == '')
 {
