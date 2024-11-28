@@ -37,7 +37,7 @@ $query = $db->select(true,"*","tasks","");
         <div class="task">
             <div class="task-control", a>
                 <input type="checkbox" name="check" checked=<?php echo $query[$i]['task_complete'] ?>>	    <?php
-if ($query[$i]['task_complete'])
+if ($query[$i]['task_complete']=1)
 {
 echo 'не отмечено';
 }
