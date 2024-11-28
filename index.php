@@ -133,7 +133,7 @@ echo $chedn. $query[$i]['task_complete'];
 
 <?php
 echo $_POST["save"];
-for($i=0;$i<count($query);$i++) {
+for($i=0;$i<count($query);$i++) {}
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 if($_POST["check$i"] == null){
@@ -141,17 +141,17 @@ if($_POST["check$i"] == null){
 	$ched = " ";
         $chedn ="не сделанно";}
 else{
-	$step = $_POST["check$i"];
+	$step = $_POST["check1"];
     	$ched = "checked";
         $chedn ="привет";}# На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
-$example = $i+1; #Значение условия
+$example = 1+1; #Значение условия
 $where1= "`task_id`='$example'"; #условие
 
 #$where = "WHERE ".$where1;
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 #echo ( $update_sql1);
-$query = $db->update($name, $set1, $where1);}
+$query = $db->update($name, $set1, $where1);
 
 ?>
    </div>
