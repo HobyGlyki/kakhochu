@@ -18,8 +18,13 @@ $query = $db->select(true,"*","tasks","");
 
 for($hi=0;$hi<count($query);$hi++) {
 if(not($query[$hi]['task_complete'])){
+	$chedn[$hi] ="не сделанно ";
+	$ched[$hi] = " ";
 }
-
+else{
+	 $ched[$hi] = "checked";
+         $chedn[$hi] ="сделанно ";
+       }
 }
  
 ?>
