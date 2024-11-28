@@ -63,16 +63,15 @@ echo 'не отмечено';
 
 <?php
 $text = "task_complete";
-$step = 0;
+$step = 1;
 $example = 1;
-$from="`tasks`";
-$set="`$text` = '$step'";
-$where= "'task_id'='$example'";
-$where = "'$where'";
-$where = "WHERE ".$where;
+$name="`tasks`";
+#$set="`$text` = '$step'";
+$where1= "'task_id'='$example'";
+#$where = "'$where'";
 echo "UPDATE ".$from." SET ".$set." ".$where."";
 
-#$db->update("tasks", "'$text'='$step'", "task_id='$example'");
+$db->update($name, "`$text` = '$step'", $where1);
 ?>
 
 </body>
