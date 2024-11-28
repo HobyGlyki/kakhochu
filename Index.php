@@ -39,7 +39,7 @@ $query = $db->select(true,"*","tasks","");
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
             <div class="task-date">
-                <input type="date" name="" value="<?php echo $query[$i]['task_date'] ?>">
+                <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
             </div>		
         </div>	
         <?php
@@ -55,5 +55,5 @@ if(isset($_POST['check']) &&
    $_POST['check'] == '1') 
 {
     echo "Need wheelchair access.";}
- echo  $_POST['check']
+ echo  $_POST['time']
 ?>
