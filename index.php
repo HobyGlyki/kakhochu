@@ -94,12 +94,12 @@ $query = $db->select(true,"*","tasks","");
 	        <div class="task">
             		<div class="task-control", a>
 				<?php
-if (($query[$i]['task_complete']==0) and $ched== null)
+if (($query[$i]['task_complete']==0))
 {
 	$chedn ="не сделанно ";
 	$ched = " ";
 }
-elseif(($query[$i]['task_complete']==1) and $ched== null){
+elseif(($query[$i]['task_complete']==1)){
 	 $ched = "checked";
          $chedn ="сделанно ";
        } 
