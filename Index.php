@@ -50,4 +50,7 @@ $query = $db->select(true,"*","tasks","");
 </body>
 </html>
 
-<?php print_r("можно") ?>
+<?php
+isset($_POST['check'])
+if ($_POST['check']== 1) 
+	(print_r("check") ?>
