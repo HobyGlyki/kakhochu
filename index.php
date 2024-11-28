@@ -24,7 +24,7 @@ else{
 	 $ched = "checked";
          $chedn ="сделанно ";
        } 
-?>}
+?>
 
 <!DOCTYPE html>
 <html lang="ru">
