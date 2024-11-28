@@ -29,7 +29,7 @@ $query = $db->select(true,"*","tasks","");
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div class="tasks">
+<div class="tasks" method="post">
     <?php
     for($i=0;$i<count($query);$i++) {
         ?>
