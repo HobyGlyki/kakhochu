@@ -55,5 +55,5 @@ if(isset($_POST['check'[0]]) &&
    $_POST['check'[0]] == '1') 
 {
     echo "Need wheelchair access.";}
- echo "Need wheelchair access."
+ echo  $_POST['check'[0]]
 ?>
