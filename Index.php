@@ -67,7 +67,7 @@ $step = 0;
 $example = 1;
 
 
-echo "UPDATE ".$from." SET ".$set." ".$where."";
+echo "UPDATE "."tasks"." SET "."'$text'='$step'"." "task_id='$example'"";
 
 $db->update("tasks", "'$text'='$step'", "task_id='$example'");
 ?>
