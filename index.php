@@ -137,7 +137,7 @@ $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 $step = $_POST["check1"]; # На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
-$example = $i; #Значение условия
+$example = 1; #Значение условия
 $where1= "`task_id`='$example'"; #условие
 
 #$where = "WHERE ".$where1;
