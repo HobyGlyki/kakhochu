@@ -100,7 +100,7 @@ if (($query[$i]['task_complete']==0))
 	$Di=disabled;
 }
  else {
-	$Di=enebled;
+	$Di=enebled;}
         ?>
         <div class="task">
             <div class="task-control", a>
