@@ -36,7 +36,15 @@ $query = $db->select(true,"*","tasks","");
         ?>
         <div class="task">
             <div class="task-control", a>
-                <input type="checkbox" name="check" checked=<?php echo $query[$i]['task_complete'] ?>>	    	
+                <input type="checkbox" name="check" checked=<?php echo $query[$i]['task_complete'] ?>>	    <?php
+if ($query[$i]['task_complete'])
+{
+echo 'не отмечено';
+}
+  else {
+        echo 'отмечено';
+       }
+?>	
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
             <div class="task-date">
