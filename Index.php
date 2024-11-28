@@ -66,10 +66,10 @@ $text = "task_complete";
 $step = 0;
 $example = 1;
 $from="tasks";
-$set="'$text'='$step'";
+$set="`text`='$text',`step`='$step'";
 $where= "'task_id'='$example'";
+$where = "example='$where'";
 $where = "WHERE ".$where;
-
 echo "UPDATE ".$from." SET ".$set." ".$where."";
 
 #$db->update("tasks", "'$text'='$step'", "task_id='$example'");
