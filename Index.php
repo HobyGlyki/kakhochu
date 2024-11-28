@@ -64,7 +64,7 @@ echo 'не отмечено';
 <?php
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
-$step = 0; # На что поменять
+$step = $_POST['my_bloggood-ru']; # На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
 $example = 1; #Значение условия
 $where1= "`task_id`='$example'"; #условие
