@@ -109,7 +109,7 @@ else{
 				<?php
 echo $chedn[$i]. $query[$i]['task_complete'];
 ?>	
-                <input type="checkbox" name=<?php echo "check".$i?> <?php echo "$ched[i]";?> value="1">
+                <input type="checkbox" name=<?php echo "check".$i?> <?php echo "$ched[$i]";?> value="1">
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
             <div class="task-date">
