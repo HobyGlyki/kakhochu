@@ -97,7 +97,7 @@ $query = $db->select(true,"*","tasks","");
         ?>
         <div class="task">
             <div class="task-control", a>
-                <input type="checkbox" name=<?php echo "check".$i ?> checked=<?php echo "" ?>>
+                <input type="checkbox" name=<?php echo "check".$i ?> checked=<?php echo "0" ?>>
 <?php
 if (($query[$i]['task_complete']==0))
 {
@@ -142,7 +142,7 @@ $where1= "`task_id`='$example'"; #условие
 #$where = "WHERE ".$where1;
 $update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 echo ( $update_sql1);
-echo ( $_POST["check1"]);
+echo ( $_POST["check"]);
 $query = $db->update($name, $set1, $where1);
 ?>
    </div>
