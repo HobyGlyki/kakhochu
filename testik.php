@@ -15,6 +15,9 @@ define('db_pass','admin_password');
 
 $db = new DB_class(db_host,db_name,db_user,db_pass);
 
+
+$name="`tasks`"; # Название таблицы
+$text = "task_complete"; # Что поменять
 $step = 1;
 $chedn ="привет";}# На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
