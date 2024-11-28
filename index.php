@@ -99,15 +99,17 @@ $query = $db->select(true,"*","tasks","");
         ?>
         <div class="task">
             <div class="task-control", a>
-                <input type="checkbox" name=<?php echo "check".$i?> <?php echo ' '?> value="1">
 <?php
 if (($query[$i]['task_complete']==0))
 {
 	echo 'не отмечено';
+	$ched = "checked"
 }
  else {
+	 $ched = " "
          echo  "check".$i;
        }?>	
+                <input type="checkbox" name=<?php echo "check".$i?> <?php echo $ched;?> value="1">
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
             <div class="task-date">
