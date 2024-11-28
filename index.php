@@ -17,7 +17,6 @@ $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
 $chedn= array();
 $ched= array();
-echo $chedn[$i];
 for($i=0;$i<count($query);$i++) {
 if($query[$i]['task_complete']){
 	$chedn[] = "сделанно ";
@@ -27,7 +26,7 @@ else{
 	 $ched[] = "checked";
          $chedn[] ="не сделанно ";
        }}
-
+echo $chedn[$i];
 
 ?>
 
