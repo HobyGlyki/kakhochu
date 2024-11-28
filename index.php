@@ -116,7 +116,7 @@ if (($query[$i]['task_complete']==0))
     }
     ?>
 	
-</div>
+
 <div class="results">
 	<br>
 	<br>
