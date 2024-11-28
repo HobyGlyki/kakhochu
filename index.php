@@ -136,13 +136,13 @@ $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 $step = $_POST["check$i"]; # На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
-$example = "$i"; #Значение условия
+$example = $i; #Значение условия
 $where1= "`task_id`='$example'"; #условие
 
 $where = "WHERE ".$where1;
 $update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 echo ( $step);
-$query = $db->update($name, $set1, $where1);}
+$update_sql1 = $db->update($name, $set1, $where1);}
 ?>
    </div>
 </body>
