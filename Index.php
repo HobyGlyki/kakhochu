@@ -65,7 +65,7 @@ echo 'не отмечено';
 $text = "task_complete";
 $step = 0;
 $example = 1;
-$from="tasks";
+$from="`tasks`";
 $set="`$text` = '$step'";
 $where= "'task_id'='$example'";
 $where = "'$where'";
