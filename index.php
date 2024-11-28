@@ -97,12 +97,7 @@ $query = $db->select(true,"*","tasks","");
         ?>
         <div class="task">
             <div class="task-control", a>
-                <input type="checkbox" name=<?php echo "check".$i ?> value="1" checked=
-	    <?php 
-	    if ($query[$i]['task_complete']==0)
-	    {echo "disabled";} 
-	else 
-	    {echo " "}?>>
+                <input type="checkbox" name=<?php echo "check".$i ?> value="1">
 <?php
 if (($query[$i]['task_complete']==0))
 {
