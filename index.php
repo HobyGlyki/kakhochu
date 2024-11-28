@@ -103,11 +103,11 @@ $query = $db->select(true,"*","tasks","");
 if (($query[$i]['task_complete']==0))
 {
 	echo 'не отмечено';
-	$ched = "checked";
+	$ched = " ";
 }
  else {
-	 $ched = " ";
-         echo  "check".$i;
+	 $ched = "checked";
+         echo  "отмечено";
        }?>	
                 <input type="checkbox" name=<?php echo "check".$i?> <?php echo $ched;?> value="1">
             </div>
