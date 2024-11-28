@@ -87,16 +87,7 @@ $query = $db->select(true,"*","tasks","");
  <h1>Задачник</h1>
  </div>
 </div>
-<form action="" method="post">
-   <div class="main-text">
-       <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
-            <div class="task-date">
-                <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
-            </div>		
 
-    <input class= "buttons" type="submit" name="save">
-
- </div>
 </form>
 </body>
 </html>
