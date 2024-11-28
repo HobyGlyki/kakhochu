@@ -30,6 +30,7 @@ $query = $db->select(true,"*","tasks","");
 </head>
 <body>
 <div class="tasks" method="post">
+<form method="post" action="">
     <?php
     for($i=0;$i<count($query);$i++) {
         ?>
@@ -48,13 +49,13 @@ $query = $db->select(true,"*","tasks","");
 	
 </div>
 
-<form method="post" action="">
+
     <!-- ещё кие-то поля -->
     <input type="checkbox" name="my_bloggood-ru" value="1" />
     <input type="submit" name="ок" value="Отправить форму" />
 </form>
 <?php
-if ( $_POST['my_bloggood-ru'] == '')
+if ( $_POST['check'] == '')
 {
 echo 'не отмечено';
 }
@@ -65,12 +66,5 @@ echo 'не отмечено';
 </body>
 </html>
 
-<?php
-if(isset($_POST['check']) && 
-   $_POST['check'] == '1') 
-{
-    echo "Need wheelchair access.";}
- echo  $_POST['time']
-?>
 
 
