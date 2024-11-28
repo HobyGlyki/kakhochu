@@ -130,6 +130,7 @@ echo $chedn. $query[$i]['task_complete'];
 
 
 <?php
+echo $queryup. "2020";
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 
@@ -152,6 +153,9 @@ $queryup = $db->update($name, $set1, $where1);
 $query = $queryup;
 echo $queryup. "2020";
 if ($queryup <> null){header("Refresh:0");}
+
+
+
 ?>
    </div>
 
