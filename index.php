@@ -141,13 +141,15 @@ $text = "task_complete"; # Что поменять
 if($_POST["check$i"] == null){$step = 0;}
 else{$step = $_POST["check$i"];}# На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
-$example = $i; #Значение условия
+$example = $i+1; #Значение условия
 $where1= "`task_id`='$example'"; #условие
 
 $where = "WHERE ".$where1;
 $update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 echo ( $update_sql1);
-$query = $db->update($name, $set1, $where1);}
+$query = $db->update($name, $set1, $where1);
+ $db->update($name, $set1, $where1);}}
+
 ?>
    </div>
 </body>
