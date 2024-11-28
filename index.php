@@ -103,6 +103,7 @@ elseif(($query[$i]['task_complete']==1)){
 	 $ched = "checked";
          $chedn ="сделанно ";
        } 
+$chedу=$chedn;
 echo $chedn. $query[$i]['task_complete'];
 ?>	
                 <input type="checkbox" name=<?php echo "check".$i?> <?php echo $ched;?> value="1">
@@ -138,10 +139,10 @@ $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 if($_POST["check$1"] == null){
 	$step = 0; 
-        $chedn ="не сделанно";}
+        $chede ="не сделанно";
 else{
 	$step = $_POST["check$1"];
-        $chedn ="привет";}# На что поменять
+        $chede ="привет";}# На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
 $example =$i+1; #Значение условия
 $where1= "`task_id`='$example'"; #условие
@@ -150,7 +151,7 @@ $where1= "`task_id`='$example'"; #условие
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 #echo ( $update_sql1);
 $query = $db->update($name, $set1, $where1);
-header("Refresh:0");}
+if($chede != $chedn)[ header("Refresh:0");}
 
 
 ?>
