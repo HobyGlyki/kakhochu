@@ -131,18 +131,18 @@ if (($query[$i]['task_complete']==0))
 
 
 <?php
-
+for($i=0;$i<count($query);$i++) {
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
-$step = 1; # На что поменять
+$step = $_POST["check$i"]; # На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
 $example = "1"; #Значение условия
 $where1= "`task_id`='$example'"; #условие
 
 $where = "WHERE ".$where1;
 $update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
-echo ( $_POST['check1']);
-$query = $db->update($name, $set1, $where1);
+echo ( $step);
+$query = $db->update($name, $set1, $where1);}
 ?>
    </div>
 </body>
