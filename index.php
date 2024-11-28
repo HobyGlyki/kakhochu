@@ -135,11 +135,11 @@ echo $_POST["save"];
 for($i=0;$i<count($query);$i++) {
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
-if($_POST["check$1"] == null){
+if($_POST["check$i"] == null){
 	$step = 0; 
         $chede ="не сделанно";}
 else{
-	$step = $_POST["check$1"];
+	$step = $_POST["check$i"];
         $chede ="привет";}# На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
 $example =$i+1; #Значение условия
