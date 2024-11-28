@@ -62,10 +62,6 @@ echo 'не отмечено';
 </form>
 
 <?php
-$text = "task_complete";
-$step = 0;
-$example = 'task_id == 1';
-$query =$db->update("tasks","`text`='$text',`step`='$step'", "example='$example'");
 
 echo 'не отмечено';
 print_r("где?")
