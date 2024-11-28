@@ -94,10 +94,17 @@ $query = $db->select(true,"*","tasks","");
 <form method="post" action="">
     <?php
     for($i=0;$i<count($query);$i++) {
+
+if (($query[$i]['task_complete']==0))
+{
+	$Di[$i]=disabled;
+}
+ else {
+	$Di[$i]=enebled;
         ?>
         <div class="task">
             <div class="task-control", a>
-                <input type="checkbox" name=<?php echo "check".$i ?> value="1">
+                <input type="checkbox" name=<?php echo "check".$i?> checked value="1">
 <?php
 if (($query[$i]['task_complete']==0))
 {
