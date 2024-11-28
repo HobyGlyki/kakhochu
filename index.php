@@ -34,7 +34,6 @@ else{
 <!DOCTYPE html>
 <html lang="ru">
 <head>
- <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Заголовок сайта</title>
  <style>
@@ -101,7 +100,6 @@ else{
  	</div>
 </div>
 <div class="main-text">
-<div class="tasks" method="post">
 	<form action=" " method="post">
 		<?php for($i=0;$i<count($query);$i++) { ?>
 	        <div class="task">
@@ -130,7 +128,6 @@ echo $chedn[$i];
 </div>
  </form>
   </div>
-</div>
 </body>
 </html>
 
