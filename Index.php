@@ -69,7 +69,7 @@ $example = 1;
 
 echo 'не отмечено';
 print_r("где?")
-$query =$db->update("tasks", "'$text'='$step'", "task_id='$example'");
+$db->update("tasks", "'$text'='$step'", "task_id='$example'");
 ?>
 
 </body>
