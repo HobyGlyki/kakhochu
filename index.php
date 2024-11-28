@@ -17,7 +17,7 @@ $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
 $chedn= array();
 $ched= array();
-echo $chedn[0];
+
 for($i=0;$i<count($query);$i++) {
 if($query[$i]['task_complete']){
 	$chedn[] = "сделанно ";
@@ -27,8 +27,8 @@ else{
 	 $ched[] = "checked";
          $chedn[] ="не сделанно ";
        }}
-echo $chedn[0];
-$query = $db->update($name, $set1, $where1);
+
+	
 ?>
 
 <!DOCTYPE html>
@@ -109,7 +109,7 @@ $query = $db->update($name, $set1, $where1);
 				<?php
 echo $chedn[$i]. $query[$i]['task_complete'];
 ?>	
-                <input type="checkbox" name=<?php echo "check".$i?> <?php echo "$ched";?> value="1">
+                <input type="checkbox" name=<?php echo "check".$i?> <?php echo "$ched[i]";?> value="1">
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
             <div class="task-date">
@@ -157,9 +157,6 @@ $update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 $queryup = $db->update($name, $set1, $where1);
 }
 $query = $queryup;
-echo $queryup. "2020";
-if ($queryup <> null){header("Refresh:0");}
-
 
 
 ?>
