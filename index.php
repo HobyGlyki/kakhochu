@@ -24,8 +24,8 @@ if($query[$i]['task_complete']){
 	$ched[] = "checked";
 }
 else{
-	 $ched[] = time();
-         $chedn[] ="не сделанно ";
+	 $ched[] = " ";
+         $chedn[] =time();
        }}
 
 	
