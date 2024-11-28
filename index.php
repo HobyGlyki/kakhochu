@@ -137,7 +137,7 @@ if ($_POST){
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 
-for($j=0;$j<count($query);$j++) {}
+for($j=0;$j<count($query);$j++) {
 if($_POST["check0"] == null){
 	$step = 0; 
         $chedn ="не сделанно";}
@@ -151,8 +151,8 @@ $where1= "`task_id`='$example'"; #условие
 #$where = "WHERE ".$where1;
 
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
-$query = $db->update($name, $set1, $where1);
-
+$query = $db->update($name, $set1, $where1);}
+header("Refresh:0");
 }
 ?>
    </div>
