@@ -70,7 +70,7 @@ $set1="`$text` = '$step'";
 $where1= "'task_id'='$example'";
 $where = "WHERE ".$where1;
 
-$update_sql1 = "UPDATE ".$namr." SET ".$set1." ".$where."";
+$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 
 echo ($update_sql1);
 
