@@ -104,8 +104,7 @@ if (($query[$i]['task_complete']==0))
 	echo 'не отмечено';
 }
  else {
-	 $chk = "check$i";
-         echo $chk;
+         echo 'отмечено';
        }?>	
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
@@ -136,7 +135,7 @@ if (($query[$i]['task_complete']==0))
  for($i=0;$i<count($query);$i++) {
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
-$step = $_POST['check']; # На что поменять
+$step = $_POST["check$i"]; # На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
 $example = $i; #Значение условия
 $where1= "`task_id`='$example'"; #условие
