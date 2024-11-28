@@ -102,7 +102,7 @@ $query = $db->select(true,"*","tasks","");
 </body>
 </html>
 
-
+<?php
 
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
