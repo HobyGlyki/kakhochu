@@ -64,7 +64,8 @@ echo 'не отмечено';
 <?php
 if ( $_POST['check'] == '')
 {
-echo 'не отмечено';
+$query = $db->select(true,"task","tasks_id","");
+echo 'не отмечено'.$query[0] ;
 }
   else {
         echo 'отмечено';
