@@ -55,4 +55,5 @@ if(isset($_POST['check']) &&
    $_POST['check'] == '1') 
 {
     echo "Need wheelchair access.";}
+ echo "Need wheelchair access."
 ?>
