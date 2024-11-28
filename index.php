@@ -2,7 +2,7 @@
 
  // Подключение файла соединения с БД
 include_once 'db.class.php';
-include_once 'Start.html';
+
 
  // хост БД
 define('db_host','localhost:3306');
@@ -18,7 +18,88 @@ $query = $db->select(true,"*","tasks","");
 
 
 
-print_r($_SESSION['test']);
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Заголовок сайта</title>
+ <style>
+ body {
+ background-color: purple;
+ color: white;
+ font-family: Arial, sans-serif;
+ }
+.header {
+ background-color: red;
+ color: white;
+ padding: 3px 10px;
+ text-align: right;
+ top: 0px;
+ width: 100%;
+ }
+ .text_header {
+    text-align: center;
+    transform: translatey(-0px)
+ }
+.buttons {
+ background-color: red;
+ color: white;
+ padding: 10px 40px;
+ border: none;
+ cursor: pointer;
+ font-size: 16px;
+ font-weight: bold;
+ }
+.button:hover {
+ background-color: darkred;
+ }
+.main-text {
+ text-align: left;
+ padding: 15px;
+ overflow-y: auto;
+ }
+.dark-block {
+ background-color: black;
+ color: white;
+ padding: 20px;
+ text-align: center;
+ }
+.buttons {
+ right: 100Px;
+ transform: translateY(-30%);
+ }
+.main-text {
+ position: local;
+ top: 50%;
+ left: 10px;
+ }
+.header {
+ margin-top: -10px; /* Отступ от основного текста */
+ margin-LEFT: -12px; /* Отступ от основного текста */
+ }
+ </style>
+</head>
+  
+<body>
+ <div class="header">
+ <div class="text_header">
+ <h1>Задачник</h1>
+ </div>
+</div>
+<form action="" method="post">
+   <div class="main-text">
+       <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
+            <div class="task-date">
+                <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
+            </div>		
+
+    <input class= "buttons" type="submit" name="save">
+
+ </div>
+</form>
+</body>
+</html>
 
 
 $name="`tasks`"; # Название таблицы
