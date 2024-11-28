@@ -19,13 +19,7 @@ $chedn= array();
 $ched= array();
 for($hi=0;$hi<count($query);$hi++) {
 if(not($query[$hi]['task_complete'])){
-	$chedn[] = "не сделанно ";
-	$ched[] = " ";
 }
-else{
-	 $ched[] = "checked";
-         $chedn[] ="сделанно ";
-       }
 }
  
 ?>
