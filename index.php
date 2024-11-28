@@ -15,7 +15,16 @@ define('db_pass','admin_password');
 
 $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
-?>
+for($h=0;$j<count($query);$h++) {
+if (not ($query[$h]['task_complete'])){
+	$chedn ="не сделанно ";
+	$ched = " ";
+}
+else{
+	 $ched = "checked";
+         $chedn ="сделанно ";
+       } 
+?>}
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -93,17 +102,9 @@ $query = $db->select(true,"*","tasks","");
 	        <div class="task">
             		<div class="task-control", a>
 				<?php
-if (($query[$i]['task_complete'])){
-	$chedn ="не сделанно ";
-	$ched = " ";
-}
-else{
-	 $ched = "checked";
-         $chedn ="сделанно ";
-       } 
 echo $chedn. $query[$i]['task_complete'];
 ?>	
-                <input type="checkbox" name=<?php echo "check".$i?> checked = <?php echo "disabled";?> value="1">
+                <input type="checkbox" name=<?php echo "check".$i?> <?php echo "$ched";?> value="1">
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
             <div class="task-date">
