@@ -91,7 +91,7 @@ $query = $db->select(true,"*","tasks","");
 
    <div class="main-text">
   <div class="tasks" method="post">
-<form action=" " method="post">
+<form action="index.php" method="post">
     <?php
     for($i=0;$i<count($query);$i++) {
 
