@@ -19,6 +19,7 @@ $chedn= array();
 $ched= array();
 
 
+?>
 
 <!DOCTYPE html>
 <html lang="ru">
