@@ -131,7 +131,7 @@ echo $chedn. $query[$i]['task_complete'];
 
 <?php
 echo $_POST["save"];
-for($j=0;$i<count($query);$i++) {
+for($j=0;$i<count($query);$j++) {
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 if($_POST["check$j"] == null){
