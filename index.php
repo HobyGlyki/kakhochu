@@ -131,10 +131,10 @@ echo $chedn. $query[$i]['task_complete'];
 
 <?php
 echo $_POST["save"];
-for($i=0;$i<count($query);$i++) {
+for($j=0;$i<count($query);$i++) {
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
-if($_POST["check$i"] == null){
+if($_POST["check$j"] == null){
 	$step = 0; 
         $chedn ="не сделанно";}
 else{
