@@ -2,7 +2,7 @@
 
  // Подключение файла соединения с БД
 include_once 'db.class.php';
-include_once 'Start.html';
+$_SESSION['test'];
  // хост БД
 define('db_host','localhost:3306');
  // Имя БД
