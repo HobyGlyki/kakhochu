@@ -97,10 +97,10 @@ $query = $db->select(true,"*","tasks","");
 
 if (($query[$i]['task_complete']==0))
 {
-	$Di[$i]=disabled;
+	$Di=disabled;
 }
  else {
-	$Di[$i]=enebled;
+	$Di=enebled;
         ?>
         <div class="task">
             <div class="task-control", a>
