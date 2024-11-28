@@ -35,7 +35,7 @@ $query = $db->select(true,"*","tasks","");
         ?>
         <div class="task">
             <div class="task-control", a>
-                <input type="checkbox" name="check"<?php echo $i?> checked=<?php echo $query[$i]['task_complete'] ?>>	    	
+                <input type="checkbox" name="check" checked=<?php echo $query[$i]['task_complete'] ?>>	    	
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
             <div class="task-date">
@@ -51,9 +51,9 @@ $query = $db->select(true,"*","tasks","");
 </html>
 
 <?php
-if(isset($_POST['check'[0]]) && 
-   $_POST['check'[0]] == '1') 
+if(isset($_POST['check']) && 
+   $_POST['check'] == '1') 
 {
     echo "Need wheelchair access.";}
- echo  $_POST['check'[0]]
+ echo  $_POST['check']
 ?>
