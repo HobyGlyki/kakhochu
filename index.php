@@ -135,7 +135,7 @@ if (($query[$i]['task_complete']==0))
  for($i=0;$i<count($query);$i++) {
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
-$step = $_POST['test']; # На что поменять
+$step = $_POST['check']; # На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
 $example = $i; #Значение условия
 $where1= "`task_id`='$example'"; #условие
