@@ -68,7 +68,7 @@ $example = 1;
 $name="`tasks`";
 $set="`$text` = '$step'";
 $where1= "'task_id'='$example'";
-$where = "'$where'";
+$where = "WHERE ".$where1;
 echo "UPDATE ".$name." SET ".$set." ".$where."";
 
 $query = $db->update($name, "`$text` = '$step'", $where1);
