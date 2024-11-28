@@ -141,7 +141,7 @@ else{
 	$step = 1;
         $chedn ="привет";}# На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
-$example =$i+1; #Значение условия
+$example =$j+1; #Значение условия
 $where1= "`task_id`='$example'"; #условие
 
 $where = "WHERE ".$where1;
