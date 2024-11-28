@@ -104,7 +104,7 @@ if (($query[$i]['task_complete']==0))
 	echo 'не отмечено';
 }
  else {
-	 $chk = "check'$i'"
+	 $chk = "check'$i'";
          echo "check".$i;
        }?>	
             </div>
