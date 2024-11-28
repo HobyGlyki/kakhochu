@@ -82,24 +82,18 @@ $query = $db->select(true,"*","tasks","");
 </head>
   
 <body>
- <div class="header">
- <div class="text_header">
- <h1>Задачник</h1>
- </div>
+	<div class="header">
+ 	<div class="text_header">
+ 	<h1>Задачник</h1>
+ 	</div>
 </div>
-
-
-   <div class="main-text">
-  <div class="tasks" method="post">
-<form action="#" method="post">
-    <?php
-    for($i=0;$i<count($query);$i++) {
-
-
-        ?>
-        <div class="task">
-            <div class="task-control", a>
-<?php
+<div class="main-text">
+<div class="tasks" method="post">
+	<form action="#" method="post">
+		<?php for($i=0;$i<count($query);$i++) { ?>
+	        <div class="task">
+            		<div class="task-control", a>
+				<?php
 if (($query[$i]['task_complete']==0))
 {
 	$chedn ="не сделанно ";
@@ -108,7 +102,8 @@ if (($query[$i]['task_complete']==0))
  else {
 	 $ched = "checked";
          $chedn ="сделанно ";
-       } echo %chedn; ?>	
+       } 
+echo %chedn; ?>	
                 <input type="checkbox" name=<?php echo "check".$i?> <?php echo $ched;?> value="1">
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
@@ -138,12 +133,14 @@ if (($query[$i]['task_complete']==0))
 for($i=0;$i<count($query);$i++) {
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
-if($_POST["check$i"] == null){$step = 0; 
-			$ched = " ";
-         		$chedn ="не сделанно";}
-else{$step = $_POST["check$i"];
-    			$ched = "checked";
-         		$chedn ="сделанно";}# На что поменять
+if($_POST["check$i"] == null){
+	$step = 0; 
+	$ched = " ";
+        $chedn ="не сделанно";}
+else{
+	$step = $_POST["check$i"];
+    	$ched = "checked";
+         $chedn ="сделанно";}# На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
 $example = $i+1; #Значение условия
 $where1= "`task_id`='$example'"; #условие
