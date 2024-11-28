@@ -97,7 +97,8 @@ $query = $db->select(true,"*","tasks","");
         ?>
         <div class="task">
             <div class="task-control", a>
-                <input type="checkbox" name=<?php echo "check".$i ?> checked=<?php echo "0" ?>>
+                <input type="checkbox" name=<?php echo "check".$i ?> checked=<?phpif (($query[$i]['task_complete']==0)){echo "disabled";} 
+	else {echo " "}?>>
 <?php
 if (($query[$i]['task_complete']==0))
 {
@@ -134,7 +135,8 @@ if (($query[$i]['task_complete']==0))
 for($i=0;$i<count($query);$i++) {
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
-$step = $_POST["check$i"]; # На что поменять
+if($_POST["check$i"] == null){$step = 0;}
+else{$step = $_POST["check$i"];}# На что поменять
 $set1="`$text` = '$step'"; #соединить Text и Step
 $example = $i; #Значение условия
 $where1= "`task_id`='$example'"; #условие
