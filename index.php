@@ -136,7 +136,7 @@ echo $_POST["save"];
 for($i=0;$i<count($query);$i++) {}
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
-if($_POST["check$i"] == null){
+if($_POST["check1"] == null){
 	$step = 0; 
 	$ched = " ";
         $chedn ="не сделанно";}
