@@ -42,6 +42,8 @@
 .main-text {
  text-align: left;
  padding: 20px;
+ height: 100%;
+ overflow-y: auto;
  }
 
 .dark-block {
@@ -83,6 +85,7 @@
 </div>
 
  <div class="main-text">
+  <div class="header">
        <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
             <div class="task-date">
                 <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
