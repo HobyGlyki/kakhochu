@@ -20,11 +20,11 @@ $ched= array();
 
 for($i=0;$i<count($query);$i++) {
 if($query[$i]['task_complete']){
-	$chedn[] = "сделанно";
+	$chedn[] = time();
 	$ched[] = "checked";
 }
 else{
-	 $ched[] = " ";
+	 $ched[] = time();
          $chedn[] ="не сделанно ";
        }}
 
@@ -133,7 +133,7 @@ echo $chedn[$i];
 
 
 <?php
-echo $queryup. "2020";
+
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 
