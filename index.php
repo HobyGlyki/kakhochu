@@ -94,9 +94,9 @@ $query = $db->select(true,"*","tasks","");
             <div class="task-date">
                 <input type="date" name="time" value="<?php echo $query[$i]['task_date']; ?>">
             </div>		
-
+<div>
     <input class= "buttons" type="submit" name="save">
-
+ </div>
  </div>
  </form>
 </body>
