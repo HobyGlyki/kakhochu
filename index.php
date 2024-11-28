@@ -18,7 +18,10 @@ $query = $db->select(true,"*","tasks","");
 $chedn= array();
 $ched= array();
 for($i=0;$i<count($query);$i++) {
-
+if(not($query[$i]['task_complete'])){
+	$chedn[] = "не сделанно ";
+	$ched[] = " ";
+}
 }
 
 
