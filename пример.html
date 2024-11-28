@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Заголовок сайта</title>
+ <style>
+ body {
+ background-color: purple;
+ color: white;
+ font-family: Arial, sans-serif;
+ }
+
+.header {
+ background-color: red;
+ color: white;
+ padding: 10px;
+ text-align: right;
+ top: 0px;
+ width: 100%;
+ }
+
+ .text_header {
+    text-align: center;
+    transform: translatey(-40px)
+ }
+
+.button {
+ background-color: red;
+ color: white;
+ padding: 10px 20px;
+ border: none;
+ cursor: pointer;
+ font-size: 16px;
+ font-weight: bold;
+ }
+
+.button:hover {
+ background-color: darkred;
+ }
+
+.main-text {
+ text-align: left;
+ padding: 20px;
+ }
+
+.dark-block {
+ background-color: black;
+ color: white;
+ padding: 20px;
+ text-align: center;
+ }
+
+.buttons {
+ right: 100Px;
+ transform: translateY(-30%);
+ }
+
+.main-text {
+ position: local;
+ top: 50%;
+ left: 10px;
+ }
+
+.dark-block {
+ position: local;
+ bottom: 0px;
+ left: 0%;
+ 
+ }
+
+.content {
+ height: 100%;
+ overflow-y: auto;
+ }
+
+.header {
+ margin-top: -8px; /* Отступ от основного текста */
+ margin-LEFT: -12px; /* Отступ от основного текста */
+ }
+ </style>
+</head>
+<body>
+ <div class="header">
+ <div class="buttons">
+ <button class="button" onclick="location.href='login.html'">Log</button>
+ <button class="button" onclick="location.href='register.html'">Reg</button>
+ </div>
+ <div class="text_header">
+ <h1>Заголовок сайта</h1>
+ </div>
+</div>
+
+ <div class="main-text">
+ <p>Тут наш текст, но мне лень придумывать, так что</p>
+
+ <div class="dark-block">
+ <p>Мы рады видеть вас на нашем сайте. Если у вас есть какие-либо вопросы или нужна помощь, не стесняйтесь обращаться к нам!</p>
+ </div>
+
+ <div class="content">
+ <p>это Алиса написала</p>
+ <p>Не верите? Я бы скинул скрин, но вшить прямо в HTML его нельзя, зато можно рандомную гифку вроде бы вшить</p>
+ <p>надо попробовать</p>
+ <img src="https://tenor.com/ru/view/cat-underwater-gif-922906369727670801.gif" 
+ height="200px"
+ width="200px"/>
+ <p> Я не весь сайт сделал, а лишь показал, что могу и как это сделать  </p>
+ <p>Демка того, что я сделал</p>
+ <p>Хочу кушать</p>
+ <p>Время 03:03</p>
+ <p>Что задали по Истории?</p>
+ <p>А по ОБЖ?</p>
+ <p>готовая работа</p>
+ </div>
+</body>
+</html>
