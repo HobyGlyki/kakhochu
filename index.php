@@ -127,7 +127,8 @@ echo $chedn;
  </form>
   </div>
 
-
+</body>
+</html>
 
 
 <?php
@@ -153,6 +154,5 @@ $upd = $db->update($name, $set1, $where1);}
 
 ?>
    </div>
-</body>
-</html>
+
 
