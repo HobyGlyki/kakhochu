@@ -105,7 +105,7 @@ elseif(($query[$i]['task_complete']==1)){
        } 
 echo $chedn;
 ?>	
-                <input type="checkbox" name=<?php echo "check".$i?> <?php echo $ched;?>="0" value="1">
+                <input type="checkbox" name=<?php echo "check".$i?> <?php echo $ched;?> value="1">
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
             <div class="task-date">
