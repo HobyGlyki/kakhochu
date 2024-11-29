@@ -129,8 +129,6 @@ echo $chedn[$i];
 	<br>
     <input class= "buttons" type="submit"S>
  </div>
-</div>
-</div>
  </form>
   </div>
 </body>
