@@ -36,9 +36,9 @@ $where1= "`task_id`='$example'"; #условие
 
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 
-
+$queryup = $db->update($name, $set1, $where1);}
 header("Refresh:1");}
-}
+
 
 
 ?>
