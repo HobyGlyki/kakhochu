@@ -1,5 +1,7 @@
 	<?php
 
+echo "da";
+
  // Подключение файла соединения с БД
 include_once 'db.class.php';
 
