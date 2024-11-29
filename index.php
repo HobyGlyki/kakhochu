@@ -20,14 +20,12 @@ $ched= array();
 
 for($i=0;$i<count($query);$i++) {
 if($query[$i]['task_complete']){
-	$chedn[] = time();
+	$chedn[] = "сделанно";
 	$ched[] = "checked";
 }
 else{
 	 $ched[] = " ";
-         $chedn[] =time();
-       }}
-
+         $chedn[] ="не сделанно ";
 
 ?>
 
