@@ -28,15 +28,7 @@ if($_POST["check0"] == null){
 else{
 	$step = 1;
         $chedn ="привет";}# На что поменять
-$set1="`$text` = '$step'"; #соединить Text и Step
-$example =1; #Значение условия
-$where1= "`task_id`='$example'"; #условие
-
-#$where = "WHERE ".$where1;
-
-#$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
-$query = $db->update($name, $set1, $where1);}
-header("Refresh:0");}
+}}
 
 
 ?>
