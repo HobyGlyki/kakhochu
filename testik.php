@@ -18,13 +18,6 @@ define('db_pass','admin_password');
 $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
 
-if ($_POST){
-$name="`tasks`"; # Название таблицы
-$text = "task_complete"; # Что поменять
 
-for($j=0;$j<count($query);$j++) {
-if($_POST["check0"] == null){
-}
-header("Refresh:0");}
 
 ?>
