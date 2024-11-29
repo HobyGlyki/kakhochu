@@ -100,7 +100,7 @@ else{
  	</div>
 </div>
 <div class="main-text">
-	<form action="" method="post">
+	<form action="testik.php" method="post">
 		<?php for($i=0;$i<count($query);$i++) { ?>
 	        <div class="task">
             		<div class="task-control", a>
