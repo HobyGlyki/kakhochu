@@ -26,7 +26,7 @@ if($_POST["select"] == null){
 	$step = 0; 
         $chedn ="не сделанно";}
 else{
-	$step = $_POST["select"];
+	$step = $_POST["select"]-1;
         $chedn ="привет";}# На что поменять
 	$set1="`$text` = '$step'"; #соединить Text и Step
 $example =1; #Значение условия
