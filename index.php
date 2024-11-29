@@ -115,12 +115,12 @@ echo $chedn[$i];
         <?php
     }
     ?>
-<input type="text" list="options">
-<datalist id="options">
-  <option value="Вариант 1">
-  <option value="Вариант 2">
-  <option value="Вариант 3">
-</datalist>	
+<select name="select" size="3" multiple>
+    <option selected value="1">Чебурашка</option>
+    <option value="2">Крокодил Гена</option>
+    <option value="3">Шапокляк</option>
+    <option value="4">Крыса Лариса</option>
+   </select>
 
 <div class="results">
 	<br>
