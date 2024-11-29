@@ -110,12 +110,17 @@ echo $chedn[$i];
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
             <div class="task-date">
                 <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
-            </div>		
+            </div>	
         </div>	
         <?php
     }
     ?>
-	
+<input type="text" list="options">
+<datalist id="options">
+  <option value="Вариант 1">
+  <option value="Вариант 2">
+  <option value="Вариант 3">
+</datalist>	
 
 <div class="results">
 	<br>
