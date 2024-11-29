@@ -22,11 +22,11 @@ $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 
 for($j=0;$j<count($query);$j++) {
-if($_POST["check0"] == null){
+if($_POST["select"] == null){
 	$step = 0; 
         $chedn ="не сделанно";}
 else{
-	$step = 1;
+	$step = $_POST["select"];
         $chedn ="привет";}# На что поменять
 	$set1="`$text` = '$step'"; #соединить Text и Step
 $example =1; #Значение условия
