@@ -115,7 +115,7 @@ echo $chedn[$i];
         <?php
     }
     ?>
-<select name="select" size="3" multiple>
+<select name="select" size="4">
     <option selected value="1">Чебурашка</option>
     <option value="2">Крокодил Гена</option>
     <option value="3">Шапокляк</option>
