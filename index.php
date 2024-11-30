@@ -20,15 +20,15 @@ $ched= array();
 
 for($i=0;$i<count($query);$i++) {
 if($query[$i]['task_complete']==1){
-	$chedn[] = "сделанно";
+	$chedn[] = "<div style='color:green'>\nсделанно\n</div>";
 	$ched[] = 2;
 }
 elseif($query[$i]['task_complete']==0){
 	 $ched[] = 0;
-         $chedn[] ="в процессе";}
+         $chedn[] ="<div style='color:red'>\nне сделанно\n</div>";}
 else{
 	 $ched[] = 1;
-         $chedn[] ="<div style='color:red'>\nне сделанно\n</div>";}	
+         $chedn[] ="<div style='color:blue'>\nв процессе\n</div>";}	
 }
 ?>
 
@@ -58,9 +58,9 @@ else{
 	<select name=<?php echo "check".$i?> class="select" size="4">
 	<option class="none" <?php if($ched[$i]==0)
 {echo "selected";} ?>value="1">Готовится</option>
-	<option class="aply"  <?php if($ched[$i]==0)
+	<option class="aply"  <?php if($ched[$i]==1)
 {echo "selected";} ?> value="2">В процессе Гена</option>
-	<option class="procces" <?php if($ched[$i]==0)
+	<option class="procces" <?php if($ched[$i]==2)
 {echo "selected";} ?> value="3">Готово</option>
 	<option class="delete" style="color: red;" value="4">Удалить</option>
    	</select>
