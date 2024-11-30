@@ -33,9 +33,9 @@ for($j=0;$j<count($query);$j++) {
 		$queryup = $db->update($name, $set1, $where1);}
 		else{
 		$queryup = $db->delete($name, $where1);
-		for($d=$j+1;$d < (count($queryup)+1);$d++) {
+		for($d=$j;$d < (count($queryup));$d++) {
 			$completet2 = "task_id";
-			$step2 = $d;
+			$step2 = $d-1;
 			$set1="`$completet2` = '$step2'";
 			$example =$d;
 			$where2 ="`task_id`='$example'";
