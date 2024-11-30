@@ -35,8 +35,12 @@ for($j=0;$j<count($query);$j++) {
 		$queryup = $db->delete($name, $where1);
 		for($d=$j+1;$d < (count($queryup)-$j+1);$d++) {
 			$completet2 = "task_id";
-			$step2 = $d+1;
+			$step2 = $d;
 			$set1="`$completet2` = '$step2'";
+			$example =$d;
+			$where2 ="`task_id`='$example'";
+			$queryup = $db->update($name, $set1, $where2);}}
+	header('Location: ' . $_SERVER['HTTP_REFERER']);
 		}
 		}
 }}
