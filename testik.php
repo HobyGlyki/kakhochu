@@ -23,7 +23,7 @@ $text = "task_complete"; # Что поменять
 
 for($j=0;$j<count($query);$j++) {
 	if ($_POST["check$j"] <> 4){
-	$step = $i;
+	$step = $j;
 	$step = $_POST["check$j"]-1;# На что поменять
 	$set1="`$text` = '$step'"; #соединить Text и Step
 $example =1; #Значение условия
