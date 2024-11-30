@@ -31,6 +31,15 @@ for($j=0;$j<count($query);$j++) {
 #$where = "WHERE ".$where1;
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 		$queryup = $db->update($name, $set1, $where1);}
+		else{
+		$queryup = $db->delete($name, $where1);
+		for($d=$j+1;$d < (count($queryup)-$j+1);$d++) {
+			$completet2 = "task_id";
+			$step2 = $d+1;
+			$set1="`$completet2` = '$step2'";
+		}
+		}
+}}
 
 header('Location: ' . $_SERVER['HTTP_REFERER']);
 
