@@ -37,9 +37,13 @@ $db = new DB_class(db_host,db_name,db_user,db_pass);
 <div class="main-text">
 	<form action="testik.php" method="post">
 	        <div class="task">
-			<br>
-	<br>
+<input name="newtext" placeholder="Логин"/> <p1> Текст задачи</p>
+            <div class="task-date">
+                <input type="date" name="time">
+	    </div>
 			</div>
+<br>
+		<br>
 		<div class="results">
 	<br>
 	<br>
