@@ -18,7 +18,7 @@ define('db_pass','admin_password');
 $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
 $name="`tasks`"; # Название таблицы
-$maxx = count($query)
+$maxx = count($query);
 
 if($_POST){
 for($j=0;$j<count($query);$j++) {
@@ -30,6 +30,7 @@ for($j=0;$j<count($query);$j++) {
 #$where = "WHERE ".$where1;
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 		$queryup = $db->update($name, $set1, $where1);
+
 
 }
 header('Location: ' . $_SERVER['HTTP_REFERER']);
