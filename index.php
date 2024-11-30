@@ -57,7 +57,7 @@ else{
 	<div class="task-control", a>
 	<select name=<?php echo "check".$i?> class="select" size="4">
 	<option class="none" <?php if($ched[$i]==0)
-{echo "selected";} ?>value="1">Готовится</option>
+{echo "selected";} ?> value="1">Готовится</option>
 	<option class="aply"  <?php if($ched[$i]==1)
 {echo "selected";} ?> value="2">В процессе Гена</option>
 	<option class="procces" <?php if($ched[$i]==2)
