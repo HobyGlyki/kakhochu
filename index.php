@@ -29,7 +29,7 @@ elseif($query[$i]['task_complete']==0){
 else{
 	 $ched[] = 1;
          $chedn[] ="не сделанно ";}	
-}}
+}
 ?>
 
 <!DOCTYPE html>
