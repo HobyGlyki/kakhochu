@@ -62,13 +62,16 @@ else{
 {echo "selected";} ?> value="2">В процессе Гена</option>
 	<option class="procces" <?php if($ched[$i]==2)
 {echo "selected";} ?> value="3">Готово</option>
-	<button class="delete" name="del" value="4">Удалить</button>
    	</select>
 	<br>
 	<br>
 <?php
 echo $chedn[$i];
+
 ?>
+
+
+<br><br><button name="del" value="4">Удалить</button>
             </div> 
 	    </div>
             </div>
