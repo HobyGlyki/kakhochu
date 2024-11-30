@@ -1,7 +1,5 @@
 	<?php
 
-echo "da";
-
  // Подключение файла соединения с БД
 include_once 'db.class.php';
 
@@ -21,14 +19,17 @@ $chedn= array();
 $ched= array();
 
 for($i=0;$i<count($query);$i++) {
-if($query[$i]['task_complete']){
+if($query[$i]['task_complete']==1){
 	$chedn[] = "сделанно";
-	$ched[] = "checked";
+	$ched[] = 2;
 }
+elseif($query[$i]['task_complete']==0){
+	 $ched[] = 0;
+         $chedn[] ="в процессе";}
 else{
-	 $ched[] = " ";
-         $chedn[] ="не сделанно ";}}
-
+	 $ched[] = 1;
+         $chedn[] ="не сделанно ";}	
+}}
 ?>
 
 <!DOCTYPE html>
@@ -107,7 +108,12 @@ else{
 				<?php
 echo $chedn[$i];
 ?>	
-                <input type="checkbox" name=<?php echo "check".$i?> <?php echo $ched[$i];?> value="1">
+	<select name=<?php echo "check".$i?> size="4">
+	<option <?php if($ched[$i]==0){echo "selected"} ?>value="1">Готовится</option>
+	<option <?php if($ched[$i]==0){echo "selected"} ?> value="2">В процессе Гена</option>
+	<option <?php if($ched[$i]==0){echo "selected"} ?> value="3">Готово</option>
+	<option style="color: red;" value="4">Удалить</option>
+   	</select>
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
             <div class="task-date">
@@ -117,12 +123,7 @@ echo $chedn[$i];
         <?php
     }
     ?>
-<select name="select" size="4">
-    <option selected value="1">Чебурашка</option>
-    <option value="2">Крокодил Гена</option>
-    <option value="3">Шапокляк</option>
-    <option value="4">Крыса Лариса</option>
-   </select>
+
 
 <div class="results">
 	<br>
@@ -134,10 +135,5 @@ echo $chedn[$i];
 </body>
 </html>
 
-
-<?php
-
-?>
-   </div>
 
 
