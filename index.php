@@ -88,7 +88,7 @@ echo $chedn[$i];
 
 <div class="task">
 <p> Загрузить новую задачу</p>
-<textarea placeholder="Ваша новая задача"></textarea>
+<textarea name="textnew" placeholder="Ваша новая задача"></textarea>
 
   <div class="task-date">
   <input type="date" name="timenew"></div>
