@@ -25,7 +25,7 @@ if ($_POST["newtask"]=="true"){
 
 header('Location: ' . $_SERVER['HTTP_REFERER'])
 }
-else{	
+elseif(1==0){	
 for($j=0;$j<count($query);$j++) {
 	$completet = "task_complete"; # Что поменять
 	$example =$j+1; #Значение условия
