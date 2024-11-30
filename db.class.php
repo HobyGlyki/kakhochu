@@ -65,7 +65,6 @@ class DB_class
 			$where = "WHERE ".$where;
 		}
 		$delete_sql = "DELETE FROM ".$from." ".$where."";
-		echo $delete_sql;
 		$delete_query = $this->con->query($delete_sql);
 	}
 
