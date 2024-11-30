@@ -114,7 +114,7 @@ else{
 <div class="main-text">
 	<form action="testik.php" method="post">
 		<?php for($i=0;$i<count($query);$i++) { ?>
-	        <div class="task" class="dark-block">
+	        <div class="task" style="dark-block">
             <div class="task-text" style="main-text"><?php echo $query[$i]['task_text'] ?>
             <div class="task-date">
                 <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
