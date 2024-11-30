@@ -38,8 +38,8 @@ for($j=0;$j<count($query);$j++) {
 			$completet2 = "task_id";
 			$step2 = $d+1;
 			$set1="`$completet2` = '$step2'";
-			$example =$d+1
-			$where2 ="`task_id`='$example'"
+			$example =$d+1;
+			$where2 ="`task_id`='$example'";
 			$queryup = $db->update($name, $set1, $where2);}}}
 		}
 }}
