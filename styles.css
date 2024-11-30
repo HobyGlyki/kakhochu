@@ -72,7 +72,8 @@
     font-size: 30px; /* Размер шрифта */
   align-self: flex-end;
   background:#4B0082;
-    outline-color: red
+    outline-color: red;
+    overflow-y: auto;
 }
  *,
 *:before,
