@@ -32,10 +32,6 @@
  padding: 15px;
  overflow-y: auto;
  }
-.buttons {
- right: 100Px;
- transform: translateY(-30%);
- }
 .main-text {
  position: local;
  top: 50%;
