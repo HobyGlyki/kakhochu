@@ -25,26 +25,13 @@ for($j=0;$j<count($query);$j++) {
 	$completet = "task_complete"; # Что поменять
 	$example =$j+1; #Значение условия
 	$where1= "`task_id`='$example'"; #условие
-	if ($_POST["check$j"] <> 4){;
 		$step = $_POST["check$j"]-1;# На что поменять
 		$set1="`$completet` = '$step'"; #соединить Text и Step
 #$where = "WHERE ".$where1;
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 		$queryup = $db->update($name, $set1, $where1);}
 
-	else{
-		$queryup = $db->delete($name, $where1);
-		$queryup = $db->select(true,"*","tasks","");
-		for($d=$j;$d<count($queryup);$d++){
-			$completet2 = "task_id";
-			$step2 = $d+2;
-			$set1="`$completet2` = '$step2'";
-			$example2 =$d+1;
-			$where2 ="`task_id`='$example2'";
-			$queryup = $db->update($name, $set1, $where2);
-}
-}
-}
+
 header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 
