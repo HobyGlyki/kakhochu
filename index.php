@@ -140,11 +140,13 @@ echo $chedn[$i];
             </div> 
 	    </div>
             </div>
-	
+	    </div>
+	<div>
+	    </div>
         <?php
     }
     ?>
-	    </div>
+
 <div class="results">
 	<br>
 	<br>
