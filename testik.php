@@ -20,11 +20,16 @@ $query = $db->select(true,"*","tasks","");
 $name="`tasks`"; # Название таблицы
 
 if ($_POST["newtask"]=="true"){
+	if($idtask >=0){
+$idtask = count($query)+1;	
+	}
+	else {
+	$idtask =1
+	}
 $completet = "`task_id`, `task_text`, `task_date`, `task_complete`";
-$idtask = count($query)+2;
 $texttask = $_POST["textnew"];
 $datetask = $_POST["timenew"];
-$step = "'$idtask',  '$texttask', '$datetask', '0'";
+$step = "'$idtask', '$texttask', '$datetask', '0'";
 $queryup = $db->insert($name,$completet ,$step);}
 
 else{
@@ -32,8 +37,7 @@ for($j=0;$j<count($query);$j++) {
 	$completet = "task_complete"; # Что поменять
 	$example =$j+1; #Значение условия
 	$where1= "`task_id`='$example'"; #условие
-	if ($_POST["check$j"] <> 4){
-		$step = $j;
+	if ($_POST["check$j"] <> 4){;
 		$step = $_POST["check$j"]-1;# На что поменять
 		$set1="`$completet` = '$step'"; #соединить Text и Step
 #$where = "WHERE ".$where1;
@@ -41,7 +45,16 @@ for($j=0;$j<count($query);$j++) {
 		$queryup = $db->update($name, $set1, $where1);}
 	else{
 		$queryup = $db->delete($name, $where1);
-}}}
+		for($d=0;$d<count($queryup);$d++) {
+		if $queryup[$d]['task_id'] > $queryup[$j]['task_id']
+			$completet2 = "task_id";
+			$step2 = $d+1;
+			$set1="`$completet2` = '$step2'";
+			$example =$d+1
+			$where2 ="`task_id`='$example'"
+			$queryup = $db->update($name, $set1, $where2);}
+		}
+}}
 header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 
