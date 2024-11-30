@@ -43,7 +43,8 @@ for($j=0;$j<count($query);$j++) {
 			$queryup = $db->update($name, $set1, $where2);
 }}
 }
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+	echo $_POST["del"]==$j;
+#header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 
 
