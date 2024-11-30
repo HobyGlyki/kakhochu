@@ -72,12 +72,6 @@ else{
  padding: 15px;
  overflow-y: auto;
  }
-.dark-block {
- background-color: black;
- color: white;
- padding: 20px;
- text-align: center;
- }
 .buttons {
  right: 100Px;
  transform: translateY(-30%);
@@ -94,13 +88,25 @@ else{
 .task {
  background-color: black;
  color: white;
- padding: 5px;
+	padding: 5px;
+    width: 30%;
+    margin: auto;
+    overflow: hidden; /* clearfix */
+   text-align: center;
+   text-align-last: center;
+   font-size: 60px
  }
 .task {
  position: local;
  bottom: 0px;
  left: 0%;
  }
+
+.task:before {
+    content: "";
+    padding-top: 100%;
+    float: left;
+   
  </style>
 </head>
   
@@ -134,10 +140,11 @@ echo $chedn[$i];
             </div> 
 	    </div>
             </div>
-	    </div>	
+	
         <?php
     }
     ?>
+	    </div>
 <div class="results">
 	<br>
 	<br>
