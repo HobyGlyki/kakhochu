@@ -109,10 +109,10 @@ select option:hover,
 background: linear-gradient(#2b003d, #4B0082, #2b003d);
 
     }
-.aply {
-  color:green
-  }
 .procces {
+  color: #0f0
+  }
+.aply {
   color:blue
   }
   .delete{
