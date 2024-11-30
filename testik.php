@@ -30,7 +30,7 @@ $step = "'$idtask', '$texttask', '$datetask', '0'";
 $#update = $db->insert($name,$completet ,$step);
 	
 #header('Location: ' . $_SERVER['HTTP_REFERER']);
-echo $name. $completet. $step;
+echo "'$idtask', '$texttask', '$datetask', '0'";
 }
 
 else{	
