@@ -18,11 +18,7 @@ define('db_pass','admin_password');
 $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
 $name="`tasks`"; # Название таблицы
-if ($_POST["newtask"]){
-$completet = "`task_id`, `task_text`, `task_date`, `task_complete`";
-$step = "`count($query)+2`,  `$_POST["textnew"]`, `$_POST["timenew"]`, `0`";
-}
-else{
+if{
 for($j=0;$j<count($query);$j++) {
 	$completet = "task_complete"; # Что поменять
 	$example =$j+1; #Значение условия
