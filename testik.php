@@ -29,8 +29,8 @@ $datetask = $_POST["timenew"];
 $step = "'$idtask', '$texttask', '$datetask', '0'";
 #$queryup = $db->insert($name,$completet ,$step);
 	
-#header('Location: ' . $_SERVER['HTTP_REFERER']);
-echo $_POST["newtask"];
+header('Location: ' . $_SERVER['HTTP_REFERER']);
+#echo $_POST["newtask"];
 }
 
 else{	
