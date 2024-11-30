@@ -23,8 +23,9 @@
  cursor: pointer;
  font-size: 16px;
  font-weight: bold;
+   border-radius: 5px;
  }
-.button:hover {
+.buttons:hover, button:hover {
  background-color: darkred;
  }
 .main-text {
