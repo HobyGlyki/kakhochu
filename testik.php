@@ -17,7 +17,7 @@ define('db_pass','admin_password');
 
 $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
-if ($_POST){
+if ($_POST["newtask"]){
 $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 
@@ -30,10 +30,10 @@ for($j=0;$j<count($query);$j++) {
 		$set1="`$text` = '$step'"; #соединить Text и Step
 #$where = "WHERE ".$where1;
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
-		$queryup = $db->update($name, $set1, $where1);}
+		$queryup = $db->update($name, $set1, $where1);}}
 	else{
 		$queryup = $db->delete($name, $where1);
-}}
+}
 header('Location: ' . $_SERVER['HTTP_REFERER']);}
 
 
