@@ -45,8 +45,8 @@ for($j=0;$j<count($query);$j++) {
 }}
 }
 	
-#header('Location: ' . $_SERVER['HTTP_REFERER']);
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
-echo $_POST["del"];
+#echo $_POST["del"];
 
 ?>
