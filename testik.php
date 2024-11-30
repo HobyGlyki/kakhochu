@@ -34,7 +34,7 @@ for($j=0;$j<count($query);$j++) {
 	else{
 		$queryup = $db->delete($name, $where1);
 		for($d=0;$d<count($queryup);$d++) {
-		if ($queryup[$d]['task_id'] < $query[$j]['task_id' and $d! > 0]){
+		if ($queryup[$d]['task_id'] < $query[$j]['task_id' and $d > 0]){
 			$completet2 = "task_id";
 			$step2 = $d+1;
 			$set1="`$completet2` = '$step2'";
