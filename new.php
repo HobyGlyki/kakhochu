@@ -14,13 +14,15 @@ define('db_name','dbate');
 define('db_user','admin');
 // Пароль БД
 define('db_pass','admin_password');
-?/>
+
+$db = new DB_class(db_host,db_name,db_user,db_pass);
+?>
 
 <!DOCTYPE html>
 <html lang="ru">
 <head>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Заголовок сайта</title>
+ <title>Новые задачи</title>
  <link rel="stylesheet" href="styles.css">
 </head>
   
@@ -31,8 +33,7 @@ define('db_pass','admin_password');
  	</div>
 </div>
 <div class="main-text">
-	<form action="testik.php" method="post">
-  </from>
+
   </div>
   </body>
   </html>
