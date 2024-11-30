@@ -28,7 +28,7 @@ elseif($query[$i]['task_complete']==0){
          $chedn[] ="в процессе";}
 else{
 	 $ched[] = 1;
-         $chedn[] ="не сделанно ";}	
+         $chedn[] ="<div style="color:red">\nне сделанно\n</div>";}	
 }
 ?>
 
@@ -37,81 +37,7 @@ else{
 <head>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Заголовок сайта</title>
- <style>
- body {
- background-color: purple;
- color: white;
- font-family: Arial, sans-serif;
- }
-.header {
- background-color: red;
- color: white;
- padding: 3px 10px;
- text-align: right;
- top: 0px;
- width: 100%;
- }
- .text_header {
-    text-align: center;
-    transform: translatey(-0px)
- }
-.buttons {
- background-color: red;
- color: white;
- padding: 10px 40px;
- border: none;
- cursor: pointer;
- font-size: 16px;
- font-weight: bold;
- }
-.button:hover {
- background-color: darkred;
- }
-.main-text {
- text-align: left;
- padding: 15px;
- overflow-y: auto;
- }
-.buttons {
- right: 100Px;
- transform: translateY(-30%);
- }
-.main-text {
- position: local;
- top: 50%;
- left: 10px;
- }
-.header {
- margin-top: -10px; /* Отступ от основного текста */
- margin-LEFT: -12px; /* Отступ от основного текста */
- }
-.task {
-   background-color: black;
-   color: white;
-   padding: 5px;
-   width: 50%;
-   margin: 10px;
-   overflow: hidden; /* clearfix */
-   border-style: solid;  /* стиль рамки в виде сплошной линии */
-   border-width: 10px;  /* толщина рамки */
-   border-radius:39px;
-   border-color: blue;  /* цвет рамки */
-   text-align: center;
-   text-align-last: center;
-   font-size: 60px
- }
-.task {
- position: local;
- bottom: 0px;
- left: 0%;
- }
-
-.task:before {
-    content: "";
-    padding-top: 100%;
-    float: left;
-   
- </style>
+ <link rel="stylesheet" href="styles.css">
 </head>
   
 <body>
@@ -129,15 +55,17 @@ else{
                 <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
 
 	<div class="task-control", a>
-	<select name=<?php echo "check".$i?> size="4">
-	<option <?php if($ched[$i]==0)
+	<select name=<?php echo "check".$i?> class="select" size="4">
+	<option class="none"<?php if($ched[$i]==0)
 {echo "selected";} ?>value="1">Готовится</option>
-	<option <?php if($ched[$i]==0)
+	<option class="aply"  <?php if($ched[$i]==0)
 {echo "selected";} ?> value="2">В процессе Гена</option>
-	<option <?php if($ched[$i]==0)
+	<option class="procces" <?php if($ched[$i]==0)
 {echo "selected";} ?> value="3">Готово</option>
-	<option style="color: red;" value="4">Удалить</option>
+	<option class="delete" style="color: red;" value="4">Удалить</option>
    	</select>
+	<br>
+	<br>
 						<?php
 echo $chedn[$i];
 ?>
