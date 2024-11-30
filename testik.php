@@ -35,10 +35,11 @@ for($j=0;$j<count($query);$j++) {
 	else{
 		#$queryup = $db->delete($name, $where1);
 		#$queryup = $db->select(true,"*","tasks","");
+		for($d=$j;$d<count($query);$d++)
 			$completet2 = "task_id";
-			$step2 = $j+2;
+			$step2 = $d+2;
 			$set1="`$completet2` = '$step2'";
-			$example2 =$j+1;
+			$example2 =$d+1;
 			$where2 ="`task_id`='$example2'";
 			#$queryup = $db->update($name, $set1, $where2);
 }
