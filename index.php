@@ -28,7 +28,7 @@ elseif($query[$i]['task_complete']==0){
          $chedn[] ="в процессе";}
 else{
 	 $ched[] = 1;
-         $chedn[] ="<div style="color:red">\nне сделанно\n</div>";}	
+         $chedn[] ="<div style='color:red'>\nне сделанно\n</div>";}	
 }
 ?>
 
@@ -56,7 +56,7 @@ else{
 
 	<div class="task-control", a>
 	<select name=<?php echo "check".$i?> class="select" size="4">
-	<option class="none"<?php if($ched[$i]==0)
+	<option class="none" <?php if($ched[$i]==0)
 {echo "selected";} ?>value="1">Готовится</option>
 	<option class="aply"  <?php if($ched[$i]==0)
 {echo "selected";} ?> value="2">В процессе Гена</option>
@@ -66,7 +66,7 @@ else{
    	</select>
 	<br>
 	<br>
-						<?php
+<?php
 echo $chedn[$i];
 ?>
             </div> 
