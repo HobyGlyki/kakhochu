@@ -55,7 +55,7 @@ else{
                 <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
 
 	<div class="task-control", a>
-	<select name=<?php echo "check".$i?> class="select" size="4">
+	<select name=<?php echo "check".$i?> class="select" size="3">
 	<option class="none" <?php if($ched[$i]==0)
 {echo "selected";} ?> value="1">Готовится</option>
 	<option class="aply"  <?php if($ched[$i]==1)
