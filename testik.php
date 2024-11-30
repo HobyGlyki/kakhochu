@@ -34,6 +34,7 @@ for($j=0;$j<count($query);$j++) {
 if($_POST['del']==4){
 		$queryup = $db->delete($name, $where1);
 		$queryup = $db->select(true,"*","tasks","");
+	if($queryup[0] <> null){
 		for($d=$j;$d<count($queryup);$d++){
 			$completet2 = "task_id";
 			$step2 = $d;
@@ -41,7 +42,7 @@ if($_POST['del']==4){
 			$example2 =$d+1;
 			$where2 ="`task_id`='$example2'";
 			$queryup = $db->update($name, $set1, $where2);
-}}}
+}}}}
 header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 
