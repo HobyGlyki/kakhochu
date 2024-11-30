@@ -91,6 +91,17 @@ else{
  margin-top: -10px; /* Отступ от основного текста */
  margin-LEFT: -12px; /* Отступ от основного текста */
  }
+.dark-block {
+ background-color: black;
+ color: white;
+ padding: 20px;
+ text-align: center;
+ }
+.dark-block {
+ position: local;
+ bottom: 0px;
+ left: 0%;
+ }
  </style>
 </head>
   
@@ -103,7 +114,7 @@ else{
 <div class="main-text">
 	<form action="testik.php" method="post">
 		<?php for($i=0;$i<count($query);$i++) { ?>
-	        <div class="task">
+	        <div class="task" class="dark-block">
             <div class="task-text" style="main-text"><?php echo $query[$i]['task_text'] ?>
             <div class="task-date">
                 <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
