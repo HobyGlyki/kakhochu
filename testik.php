@@ -28,6 +28,7 @@ $texttask = $_POST["textnew"];
 $datetask = $_POST["timenew"];
 #$step = "'$idtask', '$texttask', '$datetask', '0'";
 #header('Location: ' . $_SERVER['HTTP_REFERER'])
+	echo $_POST["newtask"];
 }
 
 	
@@ -35,6 +36,6 @@ $datetask = $_POST["timenew"];
 }
 #header('Location: ' . $_SERVER['HTTP_REFERER'])
 
-echo $_POST["newtask"];
+
 
 ?>
