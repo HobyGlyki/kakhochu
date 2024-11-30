@@ -96,10 +96,9 @@ echo $chedn[$i];
   <div class="task-date">
   <input type="date" name="timenew"></div>
 	<button class="buttons" name="newtask" value="true">загрузить новую задачу</button>
-	 </form>
 </div>
- </div>
-
+ 
+</form>
   </div>
 </body>
 </html>
