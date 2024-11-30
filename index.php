@@ -19,7 +19,7 @@ $chedn= array();
 $ched= array();
 
 for($i=0;$i<count($query);$i++) {
-if($query[$i]['task_complete']==1){
+if($query[$i]['task_complete']==2){
 	$chedn[] = "<div style='color:green'>\nсделанно\n</div>";
 	$ched[] = 2;
 }
