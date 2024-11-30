@@ -22,7 +22,7 @@ $name="`tasks`"; # Название таблицы
 if ($_POST["newtask"]=="true"){
 $completet = "`task_id`, `task_text`, `task_date`, `task_complete`";
 $idtask = count($query)+2;
-$texttask = $_POST["textnew"];
+$_POST["newtask"] = $_POST["textnew"];
 $datetask = $_POST["timenew"];
 $step = "'$idtask',  '$texttask', '$datetask', '0'";
 $queryup = $db->insert($name,$completet ,$step);}
