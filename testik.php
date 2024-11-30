@@ -32,8 +32,7 @@ for($j=0;$j<count($query);$j++) {
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 		$queryup = $db->update($name, $set1, $where1);}
 		
-	header('Location: ' . $_SERVER['HTTP_REFERER']);
-		}}
+		}
 		
 
 header('Location: ' . $_SERVER['HTTP_REFERER']);
