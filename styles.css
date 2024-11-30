@@ -109,14 +109,11 @@ select option:hover,
 background: linear-gradient(#2b003d, #4B0082, #2b003d);
         background-color: #000 !important; /* for IE */
     }
-.procces {
-  color:#00f0f0
-  }
 .aply {
-  color:#00ff00
+  color:green
   }
-.delete{
-  color:red
+.procces {
+  color:blue
   }
   .delete{
   color:red
