@@ -42,7 +42,7 @@ for($j=0;$j<count($query);$j++) {
 		$set1="`$completet` = '$step'"; #соединить Text и Step
 #$where = "WHERE ".$where1;
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
-		$queryup = $db->update($name, $set1, $where1);
+	#	$queryup = $db->update($name, $set1, $where1);
 
 	if(($_POST["del"]==$j+1) and ($maxx > 1)){
 		$queryup = $db->delete($name, $where1);
@@ -60,9 +60,10 @@ for($j=0;$j<count($query);$j++) {
 	
 
 }
-header('Location: ' . $_SERVER['HTTP_REFERER']);
-
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+#header('Location: ' . $_SERVER['HTTP_REFERER']);
+echo $_POST["newtask"];
+	echo $_POST["del"];
+#header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 #header('Location: ' . $_SERVER['HTTP_REFERER'])
 
