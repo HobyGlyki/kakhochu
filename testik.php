@@ -22,7 +22,7 @@ $name="`tasks`"; # Название таблицы
 if ($_POST["newtask"]=="true"){
 $completet = "`task_id`, `task_text`, `task_date`, `task_complete`";
 $idtask = count($query)+2;
-$_POST["newtask"] = $_POST["textnew"];
+$texttask = $_POST["newtask"];
 $datetask = $_POST["timenew"];
 $step = "'$idtask',  '$texttask', '$datetask', '0'";
 $queryup = $db->insert($name,$completet ,$step);}
@@ -34,7 +34,7 @@ for($j=0;$j<count($query);$j++) {
 	$where1= "`task_id`='$example'"; #условие
 	if ($_POST["check$j"] <> 4){
 		$step = $j;
-		$step = $_POST["newtask"]-1;# На что поменять
+		$step = $_POST["check"]-1;# На что поменять
 		$set1="`$completet` = '$step'"; #соединить Text и Step
 #$where = "WHERE ".$where1;
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
