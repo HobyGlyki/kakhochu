@@ -84,8 +84,19 @@ echo $chedn[$i];
 	<br>
     <input class= "buttons" type="submit"S>
  </div>
- </form>
-		<button class="buttons" onclick="location.href='new.php'">загрузить новую задачу</button>
+
+
+<div class="task">
+<p1> Загрузить новую задачу</p1>
+<textarea placeholder="Ваша новая задача"></textarea>
+
+  <div class="task-date">
+  <input type="date" name="timenew"></div>
+	<button class="buttons">загрузить новую задачу</button>
+	 </form>
+</div>
+ </div>
+
   </div>
 </body>
 </html>
