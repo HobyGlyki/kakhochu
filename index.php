@@ -82,7 +82,10 @@ echo $chedn[$i];
 <div class="results">
 	<br>
 	<br>
-    <input class= "buttons" type="submit"S> <div class="buttons"><button class="button" onclick="location.href='new.php'">загрузить новую задачу</button></div>
+    <input class= "buttons" type="submit"S>
+	<div class="buttons">
+		<button class="button" onclick="location.href='new.php'">загрузить новую задачу</button>
+	</div>
  </div>
  </form>
   </div>
