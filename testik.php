@@ -33,8 +33,8 @@ for($j=0;$j<count($query);$j++) {
 		$queryup = $db->update($name, $set1, $where1);}
 	else{
 		$queryup = $db->delete($name, $where1);
-}}
-header('Location: ' . $_SERVER['HTTP_REFERER']);}
+}}}
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 
 
