@@ -31,7 +31,7 @@ for($j=0;$j<count($query);$j++) {
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 		$queryup = $db->update($name, $set1, $where1);
 
-	if(($_POST["del"]==$j) and ($maxx > 1)){
+	if(($_POST["del"]==$j-1) and ($maxx > 1)){
 		$queryup = $db->delete($name, $where1);
 		$queryup = $db->select(true,"*","tasks","");
 		for($d=$j;$d<count($queryup);$d++){
