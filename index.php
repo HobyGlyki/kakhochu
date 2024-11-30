@@ -108,11 +108,7 @@ else{
 				<?php
 echo $chedn[$i];
 ?>	
-	<select name=<?php echo "check".$i?> size="4">
-	<option <?php if($ched[$i]==0){echo "selected"} ?>value="1">Готовится</option>
-	<option <?php if($ched[$i]==0){echo "selected"} ?> value="2">В процессе Гена</option>
-	<option <?php if($ched[$i]==0){echo "selected"} ?> value="3">Готово</option>
-	<option style="color: red;" value="4">Удалить</option>
+
    	</select>
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
