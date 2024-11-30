@@ -32,8 +32,8 @@ $completet = "`task_id`, `task_text`, `task_date`, `task_complete`";
 $texttask = $_POST["textnew"];
 $datetask = $_POST["timenew"];
 $step = "'$idtask', '$texttask', '$datetask', '0'";
-$queryup = $db->insert($name,$completet ,$step);}
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+$queryup = $db->insert($name,$completet ,$step);
+}
 else{	
 for($j=0;$j<count($query);$j++) {
 	$completet = "task_complete"; # Что поменять
