@@ -30,7 +30,7 @@ for($j=0;$j<count($query);$j++) {
 		$set1="`$text` = '$step'"; #соединить Text и Step
 #$where = "WHERE ".$where1;
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
-		$queryup = $db->update($name, $set1, $where1);}}
+		$queryup = $db->update($name, $set1, $where1);}
 	else{
 		$queryup = $db->delete($name, $where1);
 }
