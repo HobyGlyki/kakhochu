@@ -85,7 +85,7 @@ echo $chedn[$i];
 <div class="results">
 	<br>
 	<br>
-    <input class= "buttons" type="submit"S>
+    <input class= "buttons" name="del" type="submit" value="request">
  </div>
 
 
