@@ -34,13 +34,14 @@ for($j=0;$j<count($query);$j++) {
 	else{
 		$queryup = $db->delete($name, $where1);
 		for($d=0;$d<count($queryup);$d++) {
-		if ($queryup[$d]['task_id'] > $query[$j]['task_id']){
+		if ($queryup[$d]['task_id'] < $query[$j]['task_id']){
 			$completet2 = "task_id";
 			$step2 = $d+1;
 			$set1="`$completet2` = '$step2'";
 			$example =$d+1;
 			$where2 ="`task_id`='$example'";
 			$queryup = $db->update($name, $set1, $where2);}}}
+	header('Location: ' . $_SERVER['HTTP_REFERER']);
 		}
 }
 header('Location: ' . $_SERVER['HTTP_REFERER']);
