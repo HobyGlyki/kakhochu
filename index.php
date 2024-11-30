@@ -108,7 +108,7 @@ else{
 				<?php
 echo $chedn[$i];
 ?>	
-
+<?php if($ched[$i]==0){echo "selected";} 
    	</select>
             </div>
             <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
