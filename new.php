@@ -29,11 +29,24 @@ $db = new DB_class(db_host,db_name,db_user,db_pass);
 <body>
 	<div class="header">
  	<div class="text_header">
- 	<h1>Задачник</h1>
+ 	<h1>Создать задачу</h1>
  	</div>
 </div>
 <div class="main-text">
 
+<div class="main-text">
+	<form action="testik.php" method="post">
+	        <div class="task">
+			<br>
+	<br>
+			</div>
+		<div class="results">
+	<br>
+	<br>
+    <input class= "buttons" type="submit"S>
+	</form>
+</div>
+	
   </div>
   </body>
   </html>
