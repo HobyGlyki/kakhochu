@@ -33,6 +33,7 @@ $texttask = $_POST["textnew"];
 $datetask = $_POST["timenew"];
 $step = "'$idtask', '$texttask', '$datetask', '0'";
 $queryup = $db->insert($name,$completet ,$step);
+header('Location: ' . $_SERVER['HTTP_REFERER']
 }
 else{	
 for($j=0;$j<count($query);$j++) {
