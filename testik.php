@@ -33,7 +33,7 @@ $texttask = $_POST["textnew"];
 $datetask = $_POST["timenew"];
 $step = "'$idtask', '$texttask', '$datetask', '0'";
 $queryup = $db->insert($name,$completet ,$step);
-header('Location: ' . $_SERVER['HTTP_REFERER']
+header('Location: ' . $_SERVER['HTTP_REFERER'])
 }
 else{	
 for($j=0;$j<count($query);$j++) {
@@ -46,7 +46,7 @@ for($j=0;$j<count($query);$j++) {
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 		$queryup = $db->update($name, $set1, $where1);
 
-	if(($_POST["del"]==$j-1) and ($maxx > 1)){
+	if(($_POST["del"]==$j+1) and ($maxx > 1)){
 		$queryup = $db->delete($name, $where1);
 		$queryup = $db->select(true,"*","tasks","");
 		for($d=$j;$d<count($queryup);$d++){
