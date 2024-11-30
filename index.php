@@ -71,7 +71,7 @@ echo $chedn[$i];
 ?>
 
 
-<br><button name="del" value="4">Удалить</button>
+<br><button name="del" value=<?php echo $i ?>>Удалить</button>
             </div> 
 	    </div>
             </div>
