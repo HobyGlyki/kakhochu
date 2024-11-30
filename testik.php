@@ -22,7 +22,7 @@ $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 
 for($j=0;$j<count($query);$j++) {
-	$step = $1;
+	$step = $i;
 	$step = $_POST["select"]-1;# На что поменять
 	$set1="`$text` = '$step'"; #соединить Text и Step
 $example =1; #Значение условия
