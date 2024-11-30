@@ -19,20 +19,8 @@ $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
 $name="`tasks`"; # Название таблицы
 
-if ($_POST["newtask"]=="true"){
-	if($idtask >=0){
-$idtask = count($query)+1;	
-	}
-	else {
-	$idtask =1
-	}
-$completet = "`task_id`, `task_text`, `task_date`, `task_complete`";
-$texttask = $_POST["textnew"];
-$datetask = $_POST["timenew"];
-$step = "'$idtask', '$texttask', '$datetask', '0'";
-$queryup = $db->insert($name,$completet ,$step);}
 
-else{
+if($_POST){
 for($j=0;$j<count($query);$j++) {
 	$completet = "task_complete"; # Что поменять
 	$example =$j+1; #Значение условия
