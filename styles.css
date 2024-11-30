@@ -107,7 +107,7 @@ select option:hover,
     select option:focus,
     select option:checked {
 background: linear-gradient(#2b003d, #4B0082, #2b003d);
-        background-color: #000 !important; /* for IE */
+
     }
 .aply {
   color:green
