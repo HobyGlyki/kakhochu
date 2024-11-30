@@ -104,11 +104,15 @@ else{
 	<form action="testik.php" method="post">
 		<?php for($i=0;$i<count($query);$i++) { ?>
 	        <div class="task">
-            		<div class="task-control", a>
+            <div class="task-text"><?php echo $query[$i]['task_text'] ?>
+            <div class="task-date">
+                <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
+            </div> 
+	    </div>
+	<div class="task-control", a>
 				<?php
 echo $chedn[$i];
-?>	
-
+?>
 	<select name=<?php echo "check".$i?> size="4">
 	<option <?php if($ched[$i]==0)
 {echo "selected";} ?>value="1">Готовится</option>
@@ -119,16 +123,11 @@ echo $chedn[$i];
 	<option style="color: red;" value="4">Удалить</option>
    	</select>
             </div>
-            <div class="task-text"><?php echo $query[$i]['task_text'] ?></div>
-            <div class="task-date">
-                <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
-            </div>	
+	    </div>
         </div>	
         <?php
     }
     ?>
-
-
 <div class="results">
 	<br>
 	<br>
