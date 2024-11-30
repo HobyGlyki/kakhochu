@@ -33,7 +33,6 @@ for($j=0;$j<count($query);$j++) {
 		$queryup = $db->update($name, $set1, $where1);}
 		else{
 		$queryup = $db->delete($name, $where1);
-		$queryup = $db->select(true,"*","tasks","")
 		for($d=$j;$d < (count($queryup));$d++) {
 			$completet2 = "task_id";
 			$step2 = $d;
