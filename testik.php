@@ -42,7 +42,7 @@ for($j=0;$j<count($query);$j++) {
 			$where2 ="`task_id`='$example'";
 			$queryup = $db->update($name, $set1, $where2);}}}
 		}
-}}
+}
 header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 
