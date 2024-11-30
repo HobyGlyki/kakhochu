@@ -31,7 +31,7 @@ $#update = $db->insert($name,$completet ,$step);
 	
 #header('Location: ' . $_SERVER['HTTP_REFERER']);
 echo "'$idtask', '$texttask', '$datetask', '0'";
-}
+}}
 
 else{	
 for($j=0;$j<count($query);$j++) {
