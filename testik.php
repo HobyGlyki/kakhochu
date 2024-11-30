@@ -22,12 +22,8 @@ $name="`tasks`"; # Название таблицы
 $text = "task_complete"; # Что поменять
 
 for($j=0;$j<count($query);$j++) {
-if($_POST["select"] == null){
-	$step = 0; 
-        $chedn ="не сделанно";}
-else{
-	$step = $_POST["select"]-1;
-        $chedn ="привет";}# На что поменять
+	$step = $1;
+	$step = $_POST["select"]-1;# На что поменять
 	$set1="`$text` = '$step'"; #соединить Text и Step
 $example =1; #Значение условия
 $where1= "`task_id`='$example'"; #условие
