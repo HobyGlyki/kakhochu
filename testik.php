@@ -26,7 +26,7 @@ for($j=0;$j<count($query);$j++) {
 	$step = $j;
 	$step = $_POST["check$j"]-1;# На что поменять
 	$set1="`$text` = '$step'"; #соединить Text и Step
-$example =$j; #Значение условия
+$example =$j+1; #Значение условия
 $where1= "`task_id`='$example'"; #условие
 
 #$where = "WHERE ".$where1;
