@@ -1,0 +1,129 @@
+ body {
+ background-color: purple;
+ color: white;
+ font-family: Arial, sans-serif;
+ }
+.header {
+ background-color: red;
+ color: white;
+ padding: 3px 10px;
+ text-align: right;
+ top: 0px;
+ width: 100%;
+ }
+ .text_header {
+    text-align: center;
+    transform: translatey(-0px)
+ }
+.buttons {
+ background-color: red;
+ color: white;
+ padding: 10px 40px;
+ border: none;
+ cursor: pointer;
+ font-size: 16px;
+ font-weight: bold;
+ }
+.button:hover {
+ background-color: darkred;
+ }
+.main-text {
+ text-align: left;
+ padding: 15px;
+ overflow-y: auto;
+ }
+.buttons {
+ right: 100Px;
+ transform: translateY(-30%);
+ }
+.main-text {
+ position: local;
+ top: 50%;
+ left: 10px;
+ }
+.header {
+ margin-top: -10px; /* Отступ от основного текста */
+ margin-LEFT: -12px; /* Отступ от основного текста */
+ }
+.task {
+   background-color: black;
+   color: white;
+   padding: 30px 0px;
+   max-width: 60%;
+   
+   margin: 10px 0px;
+   border-style: solid;  /* стиль рамки в виде сплошной линии */
+   border-width: 10px;  /* толщина рамки */
+   border-radius:39px;
+   border-color: blue;  /* цвет рамки */
+   text-align: center;
+   text-align-last: center;
+   font-size: 40px;  
+ }
+
+.task:before {
+    padding-top: 100%;
+    float: left;
+}
+	 .select {
+	   margin:30px;
+    height: 170px; /* Фиксированная высота */
+    max-height: 200px; /* Максимальная высота */
+    font-size: 30px; /* Размер шрифта */
+  align-self: flex-end;
+  background:#4B0082;
+    outline-color: red
+}
+ *,
+*:before,
+*:after{
+    padding: ;
+    margin: 0;
+    box-sizing: border-box;
+}
+input[type="date"]{
+    background-color: #4B0082;
+    padding: 15px;
+    font-family: "Roboto Mono",monospace;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #990099;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+input {
+  border: 10px ;
+  border-radius: 5px;
+
+}
+select option:hover,
+    select option:focus,
+    select option:checked {
+background: linear-gradient(#2b003d, #4B0082, #2b003d);
+        background-color: #000 !important; /* for IE */
+    }
+.procces {
+  color:#00f0f0
+  }
+.aply {
+  color:#00ff00
+  }
+.delete{
+  color:red
+  }
+  .delete{
+  color:red
+  }
+  .none{
+  color:gray
+  }
+  
+  select:focus{
+    outline: none
+    }
