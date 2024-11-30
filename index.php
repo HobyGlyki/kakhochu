@@ -94,8 +94,7 @@ else{
 .task {
  background-color: black;
  color: white;
- padding: 20px;
- text-align: center;
+ padding: 5px;
  }
 .task {
  position: local;
