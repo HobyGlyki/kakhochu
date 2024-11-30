@@ -107,12 +107,8 @@ else{
             <div class="task-text"><?php echo $query[$i]['task_text'] ?>
             <div class="task-date">
                 <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
-            </div> 
-	    </div>
+
 	<div class="task-control", a>
-				<?php
-echo $chedn[$i];
-?>
 	<select name=<?php echo "check".$i?> size="4">
 	<option <?php if($ched[$i]==0)
 {echo "selected";} ?>value="1">Готовится</option>
@@ -122,9 +118,13 @@ echo $chedn[$i];
 {echo "selected";} ?> value="3">Готово</option>
 	<option style="color: red;" value="4">Удалить</option>
    	</select>
-            </div>
+						<?php
+echo $chedn[$i];
+?>
+            </div> 
 	    </div>
-        </div>	
+            </div>
+	    </div>	
         <?php
     }
     ?>
