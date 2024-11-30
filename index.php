@@ -86,12 +86,16 @@ else{
  margin-LEFT: -12px; /* Отступ от основного текста */
  }
 .task {
- background-color: black;
- color: white;
-	padding: 5px;
-    width: 30%;
-    margin: auto;
-    overflow: hidden; /* clearfix */
+   background-color: black;
+   color: white;
+   padding: 5px;
+   width: 50%;
+   margin: 10px;
+   overflow: hidden; /* clearfix */
+   border-style: solid;  /* стиль рамки в виде сплошной линии */
+   border-width: 10px;  /* толщина рамки */
+   border-radius:39px;
+   border-color: blue;  /* цвет рамки */
    text-align: center;
    text-align-last: center;
    font-size: 60px
