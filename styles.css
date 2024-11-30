@@ -123,3 +123,16 @@ background: linear-gradient(#2b003d, #4B0082, #2b003d);
   select:focus{
     outline: none
     }
+ Textarea { /*Окно Пороля*/
+background:-webkit-linear-gradient(top right, #4B0082, #3B003F); 
+border:1px solid #666;
+box-shadow:0px 2px 15ppx #000;
+ width: 320px; /* Устанавливаем ширину */
+ height: 100px; /* Устанавливаем высоту */
+    resize: none; /* Запрещает изменение размера */
+font-size:20px;
+margin:8px ;
+
+    border-radius: 5px;
+}
+
