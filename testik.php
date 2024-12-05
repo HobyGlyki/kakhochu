@@ -22,12 +22,12 @@ $name="`tasks`"; # Название таблицы
 
 if($_POST){
 if (($_POST["newtask"]== true) &&( not ($_POST["timetext"]==null)) && (not ($_POST["timenew"]==null))){
-$idtask= count($query)+1;
-$completet = "`task_id`, `task_text`, `task_date`, `task_complete`";
-$texttask = $_POST["textnew"];
-$datetask = $_POST["timenew"];
-$step = "'$idtask', '$texttask', '$datetask', '0'";
-$update = $db->insert($name,$completet ,$step);
+#$idtask= count($query)+1;
+#$completet = "`task_id`, `task_text`, `task_date`, `task_complete`";
+#$texttask = $_POST["textnew"];
+#$datetask = $_POST["timenew"];
+#$step = "'$idtask', '$texttask', '$datetask', '0'";
+#$update = $db->insert($name,$completet ,$step);
 	
 #header('Location: ' . $_SERVER['HTTP_REFERER']);
 #echo "'$idtask', '$texttask', '$datetask', '0'";
