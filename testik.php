@@ -51,7 +51,7 @@ for($j=0;$j<count($query);$j++) {
 		echo $j;
 		$example=$j;
 		$where1= "`task_id`='$example'";
-		#$queryup = $db->delete($name, $where1);
+		$queryup = $db->delete($name, $where1);
 		$queryup = $db->select(true,"*","tasks","");
 		for($d=$j+1;$d<count($queryup);$d++){
 			$completet2 = "task_id";
@@ -61,7 +61,7 @@ for($j=0;$j<count($query);$j++) {
 			$where2 ="`task_id`='$example2'";
 			echo $set1. " ";
 			echo $where2. " /n";
-			#$queryup = $db->update($name, $set1, $where2);
+			$queryup = $db->update($name, $set1, $where2);
 				}}}}
 			
 #}}
