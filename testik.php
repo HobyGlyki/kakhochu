@@ -61,7 +61,7 @@ for($j=0;$j<count($query);$j++) {
 			$where2= "`task_id`='$example2'";
 			echo $set1. "не сука";
 			echo count($queryup);
-			$queryup = $db->update($name, $set1, $where2);
+			$queryupd = $db->update($name, $set1, $where2);
 				}}}}
 			
 #}}
