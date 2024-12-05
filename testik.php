@@ -65,12 +65,14 @@ if ( ($_POST["newtask"]== true) && (!($_POST["textnew"]== "")) && (!($_POST["tim
 
 }
 else{
-	echo "no";
+echo '<script language="javascript">';
+echo 'alert("введите дату и текст")';
+echo '</script>';
 }
 #header('Location: ' . $_SERVER['HTTP_REFERER']);
 echo ($_POST["textnew"]==null);
 	echo ($_POST["timenew"]==null);
-#header('Location: ' . $_SERVER['HTTP_REFERER']);
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 #header('Location: ' . $_SERVER['HTTP_REFERER'])
 
