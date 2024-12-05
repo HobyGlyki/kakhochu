@@ -34,7 +34,7 @@ $update = $db->insert($name,$completet ,$step);
 #echo "'$idtask', '$texttask', '$datetask', '0'";
 #}}
 
-elseif(($_POST["newtask"]== true)){	
+elseif(not($_POST["newtask"]== true)){	
 	for($j=0;$j<count($query);$j++) {
 		$completet = "task_complete"; # Что поменять
 		$example =$j+1; #Значение условия
