@@ -77,7 +77,7 @@ for($d=0;$d<count($delid);$d++){
 
 echo ($_POST["del"]);
 
-#header('Location: ' . $_SERVER['HTTP_REFERER']);
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 #header('Location: ' . $_SERVER['HTTP_REFERER'])
 
