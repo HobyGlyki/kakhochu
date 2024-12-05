@@ -59,8 +59,8 @@ for($j=0;$j<count($query);$j++) {
 			$set1="`$completet2` = '$step2'";
 			$example2 =$d+1;
 			$where2= "`task_id`='$example2'";
-			echo $set1. " ";
-			echo $where2. " /n";
+			echo $set1. "не сука";
+			echo $where2. "сука";
 			$queryup = $db->update($name, $set1, $where2);
 				}}}}
 			
