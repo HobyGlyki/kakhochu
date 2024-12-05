@@ -67,7 +67,7 @@ for($d=0;$d<count($delid);$d++){
 
 	echo (($delid[$d]));
 	$queryupd = $db->update($name, $delid[$d]);
-	echo $queryupd[$d]
+	echo $queryupd[3]
 }}	
 }
 			
