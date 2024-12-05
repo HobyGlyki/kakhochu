@@ -54,11 +54,11 @@ for($j=0;$j<count($query);$j++) {
 		echo $j+1;
 		$queryup = $db->select(true,"*","tasks","");
 		for($d=$j+1;$d<count($queryup)+1;$d++){
-#			$completet2 = "task_id";
-#			$step2 = $d;
-#			$set1="`$completet2` = '$step2'";
-#			$example2 =$d+1;
-#			$where2= "`task_id`='$example2'";
+			$completet2 = "task_id";
+			$step2 = $d;
+			$set1="`$completet2` = '$step2'";
+			$example2 =$d+1;
+			$where2= "`task_id`='$example2'";
 			echo $set1. "не сука";
 			echo count($queryup);
 #			$queryupd = $db->update($name, $set1, $where2);
