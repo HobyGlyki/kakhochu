@@ -66,7 +66,8 @@ for($j=0;$j<count($query);$j++) {
 				}
 for($d=0;$d<count($delid);$d++){
 	echo $delid[];
-	}}}
+}	
+}}}
 			
 #}}
 #}
