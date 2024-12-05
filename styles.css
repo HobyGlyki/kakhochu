@@ -33,6 +33,7 @@
  text-align: left;
  padding: 15px;
  overflow-y: auto;
+white-space: pre-wrap;
  }
 .main-text {
  position: local;
