@@ -48,10 +48,10 @@ elseif($_POST["del"]=="request" ){
 else{
 for($j=0;$j<count($query);$j++) {
 	if(($_POST["del"]==$j+1) and ($maxx > 1)){
-		echo $j;
 		$example=$j;
 		$where1= "`task_id`='$example'";
 		$queryup = $db->delete($name, $where1);
+		echo $name, $where1;
 		$queryup = $db->select(true,"*","tasks","");
 		for($d=$j+1;$d<count($queryup);$d++){
 			$completet2 = "task_id";
