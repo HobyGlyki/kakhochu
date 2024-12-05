@@ -53,11 +53,11 @@ for($j=0;$j<count($query);$j++) {
 		$where1= "`task_id`='$example'";
 		#$queryup = $db->delete($name, $where1);
 		$queryup = $db->select(true,"*","tasks","");
-		for($d=$j;$d<count($queryup);$d++){
+		for($d=$j+1;$d<count($queryup);$d++){
 			$completet2 = "task_id";
-			$step2 = $d;
+			$step2 = $d-1;
 			$set1="`$completet2` = '$step2'";
-			$example2 =$d+1;
+			$example2 =$d;
 			$where2 ="`task_id`='$example2'";
 			echo $set1. " ";
 			echo $where2. " /n";
