@@ -18,7 +18,7 @@ $query = $db->select(true,"*","tasks","");
  // Подключение файла соединения с БД
 
 $name="`tasks`"; # Название таблицы
-
+$maxx = count($query);
 
 if($_POST){
 if ( ($_POST["newtask"]== true) && (!($_POST["textnew"]== "")) && (!($_POST["timenew"]=="")) ){
@@ -46,7 +46,9 @@ elseif(!($_POST["newtask"]== true)){
 		$queryup = $db->update($name, $set1, $where1);}		
 }
 
-	#if(($_POST["del"]==$j+1) and ($maxx > 1)){
+	if(($_POST["del"]==$j+1) and ($maxx > 1)){
+		echo $maxx;
+	}
 	#	$queryup = $db->delete($name, $where1);
 	#	$queryup = $db->select(true,"*","tasks","");
 	#	for($d=$j;$d<count($queryup);$d++){
