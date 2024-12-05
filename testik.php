@@ -34,7 +34,7 @@ $update = $db->insert($name,$completet ,$step);
 #echo "'$idtask', '$texttask', '$datetask', '0'";
 #}}
 
-	elseif(not ($_POST["newtask"]== true)){	
+	elseif(($_POST["newtask"]== true)){	
 }
 
 	#if(($_POST["del"]==$j+1) and ($maxx > 1)){
@@ -52,10 +52,6 @@ $update = $db->insert($name,$completet ,$step);
 #}
 	
 
-
-else{
-
-}
 #header('Location: ' . $_SERVER['HTTP_REFERER']);
 echo ($_POST["textnew"]==null);
 	echo ($_POST["timenew"]==null);
