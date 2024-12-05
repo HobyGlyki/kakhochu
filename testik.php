@@ -61,8 +61,8 @@ if ($_POST["newtask"]== true ){
 
 }
 #header('Location: ' . $_SERVER['HTTP_REFERER']);
-echo $_POST["textnew"];
-	echo $_POST["timenew"];
+echo ($_POST["textnew"]==null);
+	echo ($_POST["timenew"]==null);
 #header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 #header('Location: ' . $_SERVER['HTTP_REFERER'])
