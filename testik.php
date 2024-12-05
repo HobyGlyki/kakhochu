@@ -63,7 +63,7 @@ for($j=0;$j<count($query);$j++) {
 			$delid[]= "$set1, $where2";
 	
 				}}}
-if ((is_null($delid[0])){
+if ((is_null($delid[0]))){
 for($d=0;$d<count($delid);$d++){
 }
 	echo (is_null($delid[0]));
