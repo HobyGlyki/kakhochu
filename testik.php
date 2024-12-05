@@ -15,16 +15,11 @@ $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
 $delid= array();
 $delido= array();
-// Подключение файла соединения с БД
-
- // Подключение файла соединения с БД
-
 $name="`tasks`"; # Название таблицы
-$maxx = count($query);
+$maxx = count($query);#количество таблиц
 
 if($_POST){
 if ( ($_POST["newtask"]== true) && (!($_POST["textnew"]== "")) && (!($_POST["timenew"]=="")) ){
-	
 $idtask= count($query)+1;
 $completet = "`task_id`, `task_text`, `task_date`, `task_complete`";
 $texttask = $_POST["textnew"];
@@ -32,10 +27,6 @@ $datetask = $_POST["timenew"];
 $step = "'$idtask', '$texttask', '$datetask', '0'";
 $update = $db->insert($name,$completet ,$step);
 }
-#header('Location: ' . $_SERVER['HTTP_REFERER']);
-#echo "'$idtask', '$texttask', '$datetask', '0'";
-#}}
-
 elseif($_POST["del"]=="request" ){	
 	for($j=0;$j<count($query);$j++) {
 		$completet = "task_complete"; # Что поменять
@@ -43,9 +34,7 @@ elseif($_POST["del"]=="request" ){
 		$where1= "`task_id`='$example'"; #условие
 		$step = $_POST["check$j"]-1;# На что поменять
 		$set1="`$completet` = '$step'"; #соединить Text и Step
-#$where = "WHERE ".$where1;
-#$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
-		$queryup = $db->update($name, $set1, $where1);}		
+		$queryup = $db->update($name, $set1, $where1);}	#обновление
 }
 else{
 for($j=0;$j<$maxx;$j++) {
@@ -60,27 +49,11 @@ for($j=0;$j<$maxx;$j++) {
 			$delid[]= "`$completet2` = '$step2'";
 			$example2 =$d+1;
 			$delido[]= "`$completet2` = '$example2'";
-	
 				}}}
 if (!(is_null($delid[0]))){
 for($d=0;$d<count($delid);$d++){
-
-	echo (($delid[$d]));
 	$queryupd = $db->update($name, $delid[$d], $delido[$d]);
-	echo $queryupd[3];
-}}	
-}
-			
-#}}
-#}
-	
-
-echo ($_POST["del"]);
-
+}}}	
 header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
-#header('Location: ' . $_SERVER['HTTP_REFERER'])
-
-
-
 ?>
