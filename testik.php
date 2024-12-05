@@ -35,7 +35,7 @@ elseif($_POST["del"]=="request" ){
 		$where1= "`task_id`='$example'"; #условие
 		$step = $_POST["check$j"]-1;# На что поменять
 		$steptime = $_POST["time$j"];# На что поменять время
-		$set1="`$completetime` = '$steptime'"; #соединить Text и Step
+		$set1="`$completetime` = '$steptime', `$completet` = '$step'"; #соединить Text и Step
 		$queryup = $db->update($name, $set1, $where1);}	#обновление
 }
 else{
