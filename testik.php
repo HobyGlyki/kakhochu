@@ -63,7 +63,7 @@ for($j=0;$j<count($query);$j++) {
 			$delid[]= "$set1, $where2";
 	
 				}}}
-if (delid[0] !==null){
+if (true){
 for($d=0;$d<count($delid);$d++){
 	echo $delid[$d];
 	#$queryupd = $db->update($name, $delid[$d]);
