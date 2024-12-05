@@ -14,6 +14,7 @@ define('db_pass','admin_password');
 $db = new DB_class(db_host,db_name,db_user,db_pass);
 $query = $db->select(true,"*","tasks","");
 $delid= array();
+$delido= array();
 // Подключение файла соединения с БД
 
  // Подключение файла соединения с БД
@@ -56,17 +57,16 @@ for($j=0;$j<$maxx;$j++) {
 		for($d=$j+1;$d<($maxx);$d++){
 			$completet2 = "task_id";
 			$step2 = $d;
-			$set1="`$completet2` = '$step2'";
+			$delid[]="`$completet2` = '$step2'";
 			$example2 =$d+1;
-			$where2= "`task_id`='$example2'";
-			$delid[]= "$set1, $where2";
+			$delido[]= "`task_id`='$example2'";
 	
 				}}}
 if (!(is_null($delid[0]))){
 for($d=0;$d<count($delid);$d++){
 
 	echo (($delid[$d]));
-	$queryupd = $db->update($name, $delid[$d]);
+	$queryupd = $db->update($name, $delid[$d], $delido[$d]);
 	echo $queryupd[3]
 }}	
 }
