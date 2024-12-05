@@ -47,7 +47,7 @@ elseif($_POST["del"]=="request" ){
 		$queryup = $db->update($name, $set1, $where1);}		
 }
 else{
-for($j=0;$j<count($query);$j++) {
+for($j=0;$j<$maxx;$j++) {
 	if(($_POST["del"]==$j+1) and ($maxx > 1)){
 		$example=$j+1;
 		$where1= "`task_id`='$example'";
