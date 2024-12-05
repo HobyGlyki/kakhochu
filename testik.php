@@ -58,7 +58,7 @@ for($j=0;$j<count($query);$j++) {
 			$step2 = $d;
 			$set1="`$completet2` = '$step2'";
 			$example2 =$d+1;
-			$where2 ="`task_id`='$example2'";
+			$where2= "`task_id`='$example2'";
 			echo $set1. " ";
 			echo $where2. " /n";
 			$queryup = $db->update($name, $set1, $where2);
