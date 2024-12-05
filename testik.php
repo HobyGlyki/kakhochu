@@ -65,7 +65,7 @@ for($j=0;$j<count($query);$j++) {
 	
 
 echo ($_POST["del"]);
-	echo ($_POST["timenew"]==null);
+	echo ($maxx);
 #header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 #header('Location: ' . $_SERVER['HTTP_REFERER'])
