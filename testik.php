@@ -62,12 +62,13 @@ for($j=0;$j<count($query);$j++) {
 			$where2= "`task_id`='$example2'";
 			$delid[]= "$set1, $where2";
 	
-				}
+				}}}
+if (delid[0] !==null){
 for($d=0;$d<count($delid);$d++){
 	echo $delid[$d];
 	$queryupd = $db->update($name, $delid[$d]);
-}	
-}}}
+}}	
+}}
 			
 #}}
 #}
