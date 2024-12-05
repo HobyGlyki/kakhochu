@@ -61,8 +61,7 @@ for($j=0;$j<count($query);$j++) {
 			$example2 =$d+1;
 			$where2= "`task_id`='$example2'";
 			$delid[]= "'$set1', '$where2'";
-
-			$queryupd = $db->update($name, $set1, $where2);
+	
 				}
 for($d=0;$d<count($delid);$d++){
 	echo $delid[$d];
