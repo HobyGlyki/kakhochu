@@ -21,7 +21,7 @@ $name="`tasks`"; # Название таблицы
 
 
 if($_POST){
-if (($_POST["newtask"]== true) and not ($_POST["timetext"]==null) and not ($_POST["timenew"]==null)){
+if (($_POST["newtask"]== true) &&( not ($_POST["timetext"]==null)) && (not ($_POST["timenew"]==null))){
 $idtask= count($query)+1;
 $completet = "`task_id`, `task_text`, `task_date`, `task_complete`";
 $texttask = $_POST["textnew"];
