@@ -1,0 +1,29 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: 0;
+	border: 0;
+}
+
+.task{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	border: 4px solid #161869;
+}
+
+.task-control{
+	flex-basis: 5%;
+}
+
+.task-text{
+	flex-basis: 80%;
+	text-align: center;
+	border-left: 10px solid #1add93;
+	border-right: 10px solid #690d0d;
+}
+
+.task-date{
+	flex-basis: 10%;
+}
