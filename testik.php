@@ -22,16 +22,13 @@ $name="`tasks`"; # Название таблицы
 
 if($_POST){
 if ( ($_POST["newtask"]== true) && (!($_POST["textnew"]== "")) && (!($_POST["timenew"]=="")) ){
-	$name ="true";
-	echo $_POST["timenew"];
-	echo $name;
 	
-#$idtask= count($query)+1;
-#$completet = "`task_id`, `task_text`, `task_date`, `task_complete`";
-#$texttask = $_POST["textnew"];
-#$datetask = $_POST["timenew"];
-#$step = "'$idtask', '$texttask', '$datetask', '0'";
-#$update = $db->insert($name,$completet ,$step);
+$idtask= count($query)+1;
+$completet = "`task_id`, `task_text`, `task_date`, `task_complete`";
+$texttask = $_POST["textnew"];
+$datetask = $_POST["timenew"];
+$step = "'$idtask', '$texttask', '$datetask', '0'";
+$update = $db->insert($name,$completet ,$step);
 	
 #header('Location: ' . $_SERVER['HTTP_REFERER']);
 #echo "'$idtask', '$texttask', '$datetask', '0'";
@@ -65,9 +62,7 @@ if ( ($_POST["newtask"]== true) && (!($_POST["textnew"]== "")) && (!($_POST["tim
 
 }
 else{
-echo '<script language="javascript">';
-echo 'alert("введите дату и текст")';
-echo '</script>';
+
 }
 #header('Location: ' . $_SERVER['HTTP_REFERER']);
 echo ($_POST["textnew"]==null);
