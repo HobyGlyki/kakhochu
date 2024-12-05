@@ -51,11 +51,7 @@ for($j=0;$j<$maxx;$j++) {
 			$delid[]= "`$completet2` = '$step2'";
 			$example2 =$d+1;
 			$delido[]= "`$completet2` = '$example2'";
-				}}}
-if (!(is_null($delid[0]))){
-for($d=0;$d<count($delid);$d++){
-	$queryupd = $db->update($name, $delid[$d], $delido[$d]);
-}}}	
+				}}}}	
 header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 ?>
