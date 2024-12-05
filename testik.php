@@ -21,7 +21,7 @@ $name="`tasks`"; # Название таблицы
 
 
 if($_POST){
-if ( ($_POST["newtask"]== true) && (is_null($_POST["textnew"])) && (is_null($_POST["timenew"])) ){
+if ( ($_POST["newtask"]== true) && (($_POST["textnew"]== "")) && (($_POST["timenew"]=="")) ){
 	$name ="true";
 	echo $_POST["timenew"];
 	echo $name;
