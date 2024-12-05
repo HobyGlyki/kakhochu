@@ -59,7 +59,7 @@ else{
 	<option class="none" <?php if($ched[$i]==0)
 {echo "selected";} ?> value="1">Готовится</option>
 	<option class="aply"  <?php if($ched[$i]==1)
-{echo "selected";} ?> value="2">В процессе Гена</option>
+{echo "selected";} ?> value="2">В процессе</option>
 	<option class="procces" <?php if($ched[$i]==2)
 {echo "selected";} ?> value="3">Готово</option>
    	</select>
