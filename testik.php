@@ -52,7 +52,7 @@ for($j=0;$j<count($query);$j++) {
 		$example=$j;
 		$where1= "`task_id`='$example'";
 		#$queryup = $db->delete($name, $where1);
-		#$queryup = $db->select(true,"*","tasks","");
+		$queryup = $db->select(true,"*","tasks","");
 		for($d=$j;$d<count($queryup);$d++){
 			$completet2 = "task_id";
 			$step2 = $d;
