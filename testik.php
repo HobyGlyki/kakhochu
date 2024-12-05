@@ -66,7 +66,7 @@ for($j=0;$j<count($query);$j++) {
 if (delid[0] !==null){
 for($d=0;$d<count($delid);$d++){
 	echo $delid[$d];
-	$queryupd = $db->update($name, $delid[$d]);
+	#$queryupd = $db->update($name, $delid[$d]);
 }}	
 }
 			
