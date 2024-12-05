@@ -30,10 +30,12 @@ $update = $db->insert($name,$completet ,$step);
 elseif($_POST["del"]=="request" ){	
 	for($j=0;$j<count($query);$j++) {
 		$completet = "task_complete"; # Что поменять
+		$completetime = "task_date"; # Что поменять
 		$example =$j+1; #Значение условия
 		$where1= "`task_id`='$example'"; #условие
 		$step = $_POST["check$j"]-1;# На что поменять
-		$set1="`$completet` = '$step'"; #соединить Text и Step
+		$steptime = $_POST["time$j"];# На что поменять
+		$set1="`$completet` = '$step', '$completetime` = '$steptime'"; #соединить Text и Step
 		$queryup = $db->update($name, $set1, $where1);}	#обновление
 }
 else{
