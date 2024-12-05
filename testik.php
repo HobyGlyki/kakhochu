@@ -24,6 +24,7 @@ if($_POST){
 if ( ($_POST["newtask"]== true) && (!is_null($_POST["textnew"])) && (!is_null($_POST["timenew"])) ){
 	echo "clear";
 	echo $_POST["timenew"];
+	
 #$idtask= count($query)+1;
 #$completet = "`task_id`, `task_text`, `task_date`, `task_complete`";
 #$texttask = $_POST["textnew"];
@@ -61,6 +62,9 @@ if ( ($_POST["newtask"]== true) && (!is_null($_POST["textnew"])) && (!is_null($_
 #}
 	
 
+}
+else{
+	echo "no";
 }
 #header('Location: ' . $_SERVER['HTTP_REFERER']);
 echo ($_POST["textnew"]==null);
