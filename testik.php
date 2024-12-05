@@ -22,8 +22,9 @@ $name="`tasks`"; # Название таблицы
 
 if($_POST){
 if ( ($_POST["newtask"]== true) && (!is_null($_POST["textnew"])) && (!is_null($_POST["timenew"])) ){
-	echo "clear";
+	$name ="true"
 	echo $_POST["timenew"];
+	echo $name;
 	
 #$idtask= count($query)+1;
 #$completet = "`task_id`, `task_text`, `task_date`, `task_complete`";
