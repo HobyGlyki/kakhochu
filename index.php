@@ -52,7 +52,7 @@ else{
 	        <div class="task">
             <div class="task-text" style="main-text"><?php echo $query[$i]['task_text'] ?>
             <div class="task-date">
-                <input type="date" name="time" value="<?php echo $query[$i]['task_date'] ?>">
+                <input type="date" name=<?php echo "time".$i?> value="<?php echo $query[$i]['task_date'] ?>">
 
 	<div class="task-control", a>
 	<select name=<?php echo "check".$i?> class="select" size="2">
