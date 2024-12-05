@@ -57,9 +57,9 @@ for($j=0;$j<$maxx;$j++) {
 		for($d=$j+1;$d<($maxx);$d++){
 			$completet2 = "task_id";
 			$step2 = $d;
-			$delid[]="`$completet2` = '$step2'";
+			$delid[]= "`$completet2` = '$step2'";
 			$example2 =$d+1;
-			$delido[]= "`task_id`='$example2'";
+			$delido[]= "`$completet2` = '$example2'";
 	
 				}}}
 if (!(is_null($delid[0]))){
@@ -67,7 +67,7 @@ for($d=0;$d<count($delid);$d++){
 
 	echo (($delid[$d]));
 	$queryupd = $db->update($name, $delid[$d], $delido[$d]);
-	echo $queryupd[3]
+	echo $queryupd[3];
 }}	
 }
 			
