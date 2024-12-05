@@ -45,10 +45,11 @@ elseif(!($_POST["newtask"]== true)){
 #$update_sql1 = "UPDATE ".$name." SET ".$set1." ".$where."";
 		$queryup = $db->update($name, $set1, $where1);}		
 }
-
+else{
+for($j=0;$j<count($query);$j++) {
 	if(($_POST["del"]==$j+1) and ($maxx > 1)){
 		echo $maxx;
-	}
+	}}}
 	#	$queryup = $db->delete($name, $where1);
 	#	$queryup = $db->select(true,"*","tasks","");
 	#	for($d=$j;$d<count($queryup);$d++){
