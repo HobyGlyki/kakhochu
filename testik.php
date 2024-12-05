@@ -49,16 +49,20 @@ else{
 for($j=0;$j<count($query);$j++) {
 	if(($_POST["del"]==$j+1) and ($maxx > 1)){
 		echo $maxx;
-	}}}
-	#	$queryup = $db->delete($name, $where1);
-	#	$queryup = $db->select(true,"*","tasks","");
-	#	for($d=$j;$d<count($queryup);$d++){
-	#		$completet2 = "task_id";
-	#		$step2 = $d;
-	#		$set1="`$completet2` = '$step2'";
-	#		$example2 =$d+1;
-	#		$where2 ="`task_id`='$example2'";
-	#		$queryup = $db->update($name, $set1, $where2);
+		$example=$j;
+		$where1= "`task_id`='$example'";
+		$queryup = $db->delete($name, $where1);
+		$queryup = $db->select(true,"*","tasks","");
+		for($d=$j;$d<count($queryup);$d++){
+			$completet2 = "task_id";
+			$step2 = $d;
+			$set1="`$completet2` = '$step2'";
+			$example2 =$d+1;
+			$where2 ="`task_id`='$example2'";
+			echo $set1. " ";
+			echo $where2. " /n";
+			#$queryup = $db->update($name, $set1, $where2);
+				}}}}
 			
 #}}
 #}
